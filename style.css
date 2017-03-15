@@ -159,6 +159,42 @@ details summary:before {
 details[open] summary:before {
     background-position: -18px 0;
 }
+/*AboutUs.html */
+.forcontent img{
+	height: 145px;
+	width: 145px;
+    border-radius: 80px;
+	overflow:hidden;
+	float: left;
+	margin-right: 10px;
+	margin-top: -20px;
+}
+
+.maincontent {
+    line-height: 25px;
+    border-radius: 5px;
+    width: 60%;
+    padding-top: 55px;
+    margin: auto;
+        
+}
+
+.content {
+    width: 100%;
+    float: left;
+}
+
+.forcontent {
+    background-color:#DAD7D7;
+    font-family: consolas;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6% 8%;
+    padding-top: 4px;
+    margin-top: 2%;
+    height: auto;
+    box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .2);
+}
 
 /* Footer */
 .line {
