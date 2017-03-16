@@ -7,7 +7,7 @@ html {
 }
 
 /* Menu */
-.navigation{
+.navigation {
 	height: 50px;
     padding: 0;
 	margin: 0;
@@ -90,6 +90,7 @@ dt {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 30px;
+	text-decoration: underline;
 }
 
 dd {
@@ -108,16 +109,6 @@ dd {
 
 .box-padding {
 	padding: 50px 50px 50px 40px;
-}
-
-p.hidden {
-	display: none;
-}
-
-p.hidden:target {
-	display: block;
-	border-top: 1px solid #666;
-	border-bottom: 1px solid #666;
 }
 
 details {
@@ -171,12 +162,11 @@ details[open] summary:before {
 }
 
 .maincontent {
-    line-height: 25px;
+    line-height: 30px;
     border-radius: 5px;
     width: 60%;
-    padding-top: 55px;
-    margin: auto;
-        
+    padding-top: 60px;
+    margin: auto;   
 }
 
 .content {
@@ -188,10 +178,10 @@ details[open] summary:before {
     background-color:#DAD7D7;
     font-family: consolas;
     font-size: 18px;
-    border-radius: 5px;
-    padding: 6% 8%;
-    padding-top: 4px;
-    margin-top: 2%;
+    border-radius: 10px;
+    padding: 8% 8%;
+    padding-top: 7px;
+    margin-top: 5%;
     height: auto;
     box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .2);
 }
