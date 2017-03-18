@@ -1,63 +1,118 @@
 <!DOCTYPE html>
-<html>
-	<link rel="stylesheet" media="screen" type="text/css" href="style.css" />
+<html lang="en">
+<head>
+	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<head>
-		<title>Topics</title>
-	</head>
+		<title>About Us</title>
+</head>
+	
 <body>
+    <header>
 	<!-- NAV -->
 	<div id="navigation">
 			<ul class="navigation">
-           		<li><a href="index.html">Home</a></li>
-            	<li><a href="#">Topics</a>
-					<ul>
-				   		<li><a href="prelims.html">Prelim Period</a></li>
-				   		<li><a href="midterms.html">Midterm Period</a></li>
-				   		<li><a href="finals.html">Final Period</a></li>
-					</ul>         
-			 	</li> 	
-				<li><a href="samplecodes.html">Sample Codes</a>
-					<ul>
-				   		<li><a href="codes.html">HTML</a></li>
-				   		<li><a href="codes.html">CSS</a></li>
-				   		<li><a href="codes.html">JavaScript</a></li>
-					</ul>
+           		<li><a href="index.html">HOME</a></li>
+                <li>
+                    <a href="prelims.html">PRELIMS</a> 
+                </li>    
+				<li>
+                    <a href="#">MIDTERMS</a>
+                     <ul>
+                        <li><a href="midterms/html.html">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
 				</li>
-				<li><a href="AboutUs.html">About Us</a></li>
+                <li>
+                    <a href="#">FINALS</a>
+                     <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+				</li>
+				<li>
+                    <a href="AboutUs.html">ABOUT US</a>
+                </li>
             </ul>
-        </div> 
-		
+        </div>
+    </header>
+    
+    <!-- TABLE OF CONTENTS -->
+    <section>
+        <h1>CONTENTS</h1>
+        <nav class="fill">
+            <ul>
+            <li><a href="#internet">Internet</a><a href ="#www">World Wide Web</a></li>
+                <ul>
+		            <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#history-internet">History of Internet</a></li>
+		        </ul> 
+            <li><a href="#http">HTTP</a>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+		    <li><a href="#"></a></li>	
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </section>
+        
 	<div id="page">  <!-- wraps and defines overall page width, centers it -->
 		<div id="content"> <!-- content area of page -->
 			<div class="box">
-				<div class="box-padding">
-				
-				<h1>Introduction to Internet and Web Fundamentals</h1>
+				<div class="box-padding">				
+                <!-- ARTICLE -->
+                <article id="internet-www">
+                <section>
+				<dt id="intro">Introduction of Internet and World Wide Web</dt>
 				<p>
 				In today's world, people is more likely to be exposed to the Internet and World Wide Web (WWW). People considered the internet to have a huge resource of information but they don't appreciate the history or how it really works especially in creating and developing websites.
-				</p>
-				
+				</p>				
 				<p>
 				The purpose of this period is to introduce the history of the Internet, World Wide Web (WWW), World Wide Web Consortium (W3C), standard markup language and services of the internet. 
 				</p>
-				
-				<dt>Internet</dt>
+
+				<dt id="internet">Internet</dt>
 				<dd> Globally information system that is logically linked together by a gloally uniquie address space based on the IP. </dd>
 				<dd>Vinton Cerf is the father of the Internet.</dd>
+                    
+                <dt id="history-internet">History of the Internet</dt>
+                <table class="">
+                <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+                </table>
+                </section>
 
-				<dt>Network</dt>
-				<dd> It is used for connecting devices together. </dd> 
-				<dt>Nodes</dt>
-				<dd>These are the devices that are connected.</dd>
-
-				<dt>Electronic Mail (E-mail)</dt>
-				<dd>First killer application in 1972.</dd>
-
-				<dt>World Wide Web</dt>
+				<dt id="www">World Wide Web</dt>
 				<dd> Way of accesing information over the medium of the internet. It is also an information-sharing model that is built on top of the internet. </dd>
 				<dd> Tim-Berners Lee is the Father of the World Wide Web. </dd>
+                </section>
+                </article>
 
 				<dt>Wide Area information Servers (WAIS)</dt>
 				<dd>The index of all databases.</dd> 
@@ -75,7 +130,7 @@
 						<dd>Host</dd>
 						<dd>Port number (optional)</dd>
 						<dd>Path to the resources</dd>
-						<dd>Scheme-specific parameters (optional)</dt>
+						<dd>Scheme-specific parameters (optional)</dd>
 						<dd>URL query (optional)</dd>
 						<dd>Bookmark (or fragment identifier) (optional)</dd>
 				
@@ -90,9 +145,7 @@
 						<dd>HTTP 1.1(RFC 2068,  Jan 1997, RFC 2616 June 1999, RFC 7230-723 June 2014)</dd>
 						<dd>HTTP 2.0 (RFC 7540, May 2015)</dd>
 				</dl>
-				
-				
-				
+								
 				<h1>HTTP Response Message</h1>
 					<details>
 						<summary> Response Messages </summary>
@@ -571,20 +624,24 @@
                                     </ul>
                             </ul>
                     </details>
-                    <dt>References</dt>
+                    
+                    <article>
+                    <h2>References</h2>
                         <ul>
-                            <li>HTTP/1.1: Header Field Definitions. (n.d.). Retrieved March 17, 2017, from <a href = "https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14">https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14</a></li>
-                            <li>Hypertext Transfer Protocol -- HTTP/1.1. (n.d.). Retrieved March 17, 2017, from <a href = "https://www.w3.org/Protocols/rfc2616/rfc2616.html">https://www.w3.org/Protocols/rfc2616/rfc2616.html</a></li>
+                            <li>Connolly, D. (2004, September 1). HTTP/1.1. Retrieved from Internet RFC 2616: https://www.w3.org/Protocols/rfc2616/rfc2616.html</li>
+                            <li>Connolly, D. (2004, September 1). Hypertext Transfer Protocol -- HTTP/1.1. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14</li>
                         </ul>
-				</div>
+                    </article>
+                 </div>
 			</div>
 		</div>
 	</div>
-</body>
+        
 	<!-- FOOTER -->
 		<div class="line">
 				<footer>  
 						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Joy Cabildo | Gian Dumpit | Bryn Edades | Crislyn Alawas
 				</footer>
 		</div>
+</body>    
 </html>
