@@ -40,27 +40,28 @@
     </header>
     
     <!-- TABLE OF CONTENTS -->
-    <section>
+    <section id="content">
         <h1>CONTENTS</h1>
-        <nav class="fill">
-            <ul>
-            <li><a href="#internet">Internet</a><a href ="#www">World Wide Web</a></li>
-                <ul>
+            <ol class="rounded-list">
+            <li><a href="#internet">Internet</a><a href ="#world-wide-web">World Wide Web</a></li>
+                <ol>
 		            <li><a href="#intro">Introduction</a></li>
                     <li><a href="#history-internet">History of Internet</a></li>
-		        </ul> 
+		        </ol> 
             <li><a href="#http">HTTP</a>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-		    <li><a href="#"></a></li>	
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+                <ol>
+                    <li><a href="#http-versions">HTTP Versions</a></li>
+                    <li><a href="#responsemessage">Response Messages</a></li>
+                    <li><a href="#requestmethods">Request Methods</a></li>
+                    <li><a href="#syntax-uri">Learning About the Syntax of a Generic URI</a></li>
+                    <li><a href="#methoddefinitions">Method Definitions</a></li>
+                    <li><a href="#messageheaders">Message Header Definitions</a></li>
+                    <li><a href="#statuscodes">Status Codes</a></li>
+                </ol>
+            <li><a href="#terms">Glossary of Terms</a></li>
+            <li><a href="#references">References</a></li>
+            </ol>
             </li>
-        </ul>
         </nav>
     </section>
         
@@ -71,19 +72,23 @@
                 <!-- ARTICLE -->
                 <article id="internet-www">
                 <section>
-				<dt id="intro">Introduction of Internet and World Wide Web</dt>
+				<dt id="#intro">Introduction of Internet and World Wide Web</dt>
 				<p>
 				In today's world, people is more likely to be exposed to the Internet and World Wide Web (WWW). People considered the internet to have a huge resource of information but they don't appreciate the history or how it really works especially in creating and developing websites.
 				</p>				
 				<p>
 				The purpose of this period is to introduce the history of the Internet, World Wide Web (WWW), World Wide Web Consortium (W3C), standard markup language and services of the internet. 
 				</p>
-
-				<dt id="internet">Internet</dt>
-				<dd> Globally information system that is logically linked together by a gloally uniquie address space based on the IP. </dd>
-				<dd>Vinton Cerf is the father of the Internet.</dd>
+                </section>
                     
-                <dt id="history-internet">History of the Internet</dt>
+                <section>
+				<dt id="#internet">Internet</dt>
+				<dd> Globally information system that is logically linked together by a gloally unique address space based on the IP. </dd>
+                <dd><a href="#cerf">Vinton Cerf</a> is the father of the Internet.</dd>
+                </section>
+                    
+                <section>    
+                <dt id="#history-internet">History of the Internet</dt>
                 <table class="">
                 <thead>
                 <tr>
@@ -93,60 +98,75 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
+                    <td>1960</td>
                     <td></td>
                 </tr>
                 <tr>
+                    <td>1969</td>
+                    <td>Internet was introduced to the public, and universities and researches were connected to <strong>ARPA</strong>.</td>
+                </tr>
+                <tr>
+                    <td>1972</td>
+                    <td>Killer application was born called <a href="#email">E-mail</a>.</td>
+                </tr>
+                <tr>
+                    <td>1977</td>
                     <td></td>
-                    <td></td>
+                </tr>
+                <tr>
+                    <td>1980</td>
+                    <td><a href="#tim">Tim Berners-Lee</a>, started linking <a href="#http">HTTP</a>, <a href="#html">HTML</a>,<a href="#webserver">Web Server</a> and the <a href="#webclient">Web Client</a>.</td>
                 </tr>
                 </tbody>
                 </table>
                 </section>
-
-				<dt id="www">World Wide Web</dt>
+                    
+                <section>
+				<dt id="#world-wide-web">World Wide Web</dt>
 				<dd> Way of accesing information over the medium of the internet. It is also an information-sharing model that is built on top of the internet. </dd>
 				<dd> Tim-Berners Lee is the Father of the World Wide Web. </dd>
                 </section>
                 </article>
-
-				<dt>Wide Area information Servers (WAIS)</dt>
-				<dd>The index of all databases.</dd> 
-
-
-				<dt>Hypertext Transfer Protocol (HTTP)</dt>
+                
+                <section>
+				<dt id="#http">Hypertext Transfer Protocol (HTTP)</dt>
 				<dd>Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web.</dd>
 				<dd>Jointly developed by the World Wide Web Consortium(W3C) and Internet Engineering Task Force(IETF).</dd>
 				<dd> HTTP runs on top of TCP/IP, using TCP port 80 (TCP port 443 for HTTPS).</dd>
-				
-				<dl>
-					<dt>Syntax of a generic URI</dt>
-						<dd>HTTP Scheme (http: or https:)</dd>
-						<dd>Authentication Information (optional)<dd>
-						<dd>Host</dd>
-						<dd>Port number (optional)</dd>
-						<dd>Path to the resources</dd>
-						<dd>Scheme-specific parameters (optional)</dd>
-						<dd>URL query (optional)</dd>
-						<dd>Bookmark (or fragment identifier) (optional)</dd>
-				
-
-				 <dt>Protocol</dt>
-				 <dd>A rules that must be followed.</dd>
-
-				<dl>
-					<dt>HTTP Versions</dt>  
-						<dd>HTTP 0.9 (1991)</dd>
-						<dd>HTTP 1.0(RFC 1945, May 1996)</dd>
-						<dd>HTTP 1.1(RFC 2068,  Jan 1997, RFC 2616 June 1999, RFC 7230-723 June 2014)</dd>
-						<dd>HTTP 2.0 (RFC 7540, May 2015)</dd>
-				</dl>
-								
-				<h1>HTTP Response Message</h1>
+                </section>
+                    
+                <section>    
+                <dt id="#http-versions">HTTP Versions</dt>
+                <table class="">
+                <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>HTTP 0.9 (1991)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HTTP 1.0 (RFC 1945, May 1996)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>HTTP 1.1(RFC 2068,  Jan 1997, RFC 2616 June 1999, RFC 7230-723 June 2014)</td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td>HTTP 2.0 (RFC 7540, May 2015)</td>
+                    <td></td>
+                </tr>                          
+                </tbody>
+                </table>
+                </section>
+                    
+                <section>
+				<h1 id="responsemessage">HTTP Response Message</h1>
 					<details>
 						<summary> Response Messages </summary>
 							<ul>
@@ -161,38 +181,56 @@
 								<li>Empty Line</li>
 							</ul>
 					</details>
-				
-				
-				<h1>HTTP Request Methods</h1>
+                </section>
+                
+                <section>
+				<h1 id="requestmethods">HTTP Request Methods</h1>
 					<details>
 						<summary> Standard Method </summary>
 							<ul>
 								<li> Safe Method </li>
 									<ul>
-										<li> get (retrieve) </li>
-										<li> head </li>
-										<li> options </li>
-										<li> trace </li>
-										<li> connect </li>
+										<li> GET (retrieve) </li>
+										<li> HEAD </li>
+										<li> OPTIONS </li>
+										<li> TRACE </li>
+										<li> CONNECT </li>
 									</ul>
 								<li> Modify Server/ Not Safe </li>
 									<ul>
-										<li> post </li>
-										<li> put </li>
-										<li> delete </li>
+										<li> POST </li>
+										<li> PUT </li>
+										<li> DELETE </li>
 									</ul>
 								<li> Idempotent </li>
+                                    <p>Doing the method over and over again does not change the response.</p>
 									<ul> 
-										<li> get </li>
-										<li> head </li>
-										<li> put </li>
-										<li> delete </li>
-										<li> options </li>
-										<li> trace </li>
+										<li> GET </li>
+										<li> HEAD </li>
+										<li> PUT </li>
+										<li> DELETE </li>
+										<li> OPTIONS </li>
+										<li> TRACE </li>
 									</ul>
                             </ul>
 					</details>
-						
+                    </section>
+                    
+                    <section>
+				    <dl>
+					<dt id="syntax-uri">Syntax of a generic <a href="#uri"></a>URI</dt>
+						<dd>HTTP Scheme (http: or https:)</dd>
+						<dd>Authentication Information (optional)<dd>
+						<dd>Host</dd>
+						<dd>Port number (optional)</dd>
+						<dd>Path to the resources</dd>
+						<dd>Scheme-specific parameters (optional)</dd>
+						<dd>URL query (optional)</dd>
+						<dd>Bookmark (or fragment identifier) (optional)</dd>
+                    </dl>
+                    </section>			
+				    
+                    <section>
 					<details>
 						<summary> Extension Method </summary>
 							<ul>
@@ -206,14 +244,15 @@
 										<li> LOCK </li>
 										<li> UNLOCK </li>
 									</ul>
-								<li> Options </li>
-								<li> Trace </li>
+								<li> OPTIONS </li>
+								<li> TRACE </li>
 							</ul>
 					</details>
+                    </section>
 				
-				
-				<h1>HTTP Message Header Fields</h1>
-				    <details>
+				    <section>
+                    <h1 id="#messageheaders">HTTP Message Header Fields</h1>
+                    <details>
                         <summary>General Header Fields</summary>
                             <ul>
                                 <li>Cache Control</li>
@@ -254,6 +293,9 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
 				    <details>
                         <summary>Request Header Fields</summary>
                             <ul>
@@ -335,6 +377,9 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Entity Header Fields</summary>
                             <ul>
@@ -380,6 +425,9 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Response Header Fields</summary>
                             <ul>
@@ -421,8 +469,10 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
             
-				<h1>HTTP Status Codes</h1>
+                <section>
+				<h1 id="#statuscodes">HTTP Status Codes</h1>
                     <details>
                         <summary>Informational (1xx)</summary>
                             <ul>  
@@ -436,6 +486,9 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Successful (2xx)</summary>
                             <ul>  
@@ -473,6 +526,9 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Redirection (3xx)</summary>
                             <ul>
@@ -508,12 +564,15 @@
                                     <ul>
                                         <li>Server sent this response to directing client to get requested resource to another URI with same method that used prior request.</li>
                                     </ul>
-				 <li>308 Permanent Redirect</li>
+				                        <li>308 Permanent Redirect</li>
                                     <ul>
                                         <li>This means that the resource is now permanently located at another URI, specified by the location</li>
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Client Error (4xx)</summary>
                             <ul>
@@ -589,12 +648,15 @@
                                     <ul>
                                         <li>This response code means the expectation indicated by the Expect request header field can't be met by the server.</li>
                                     </ul>
-				<li>426 Upgrade Required</li>
+				                <li>426 Upgrade Required</li>
                                     <ul>
                                         <li>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.</li>
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
                     <details>
                         <summary>Server Error (5xx)</summary>
                             <ul>
@@ -624,15 +686,33 @@
                                     </ul>
                             </ul>
                     </details>
+                    </section>
+                    
+                    <section>
+                    <h1 id="terms">Glossary of Terms</h2>
+                    <p>This short glossary is intended to provide a useful and accessible set of definitions for the terms that we use in web systems and technologies.</p>
+                    <ul>
+                        <li id="#uri">Cache</li>  
+                        <li id="#email">E-mail</li>
+                        <li id="#html">HTML</li>
+                        <li>Protocol</li>  
+                        <li id="#tim">Tim Berners-Lee</li>
+                        <li id="#uri">URI</li>                             <li id="cerf">Vinton Cerf</li>
+                        <li id="#webserver">Web Server</li>
+                        <li id="#webclient">Web Client</li>
+                    </ul>
+                    </section>
+
                     
                     <article>
-                    <h2>References</h2>
+                    <h2 id="#references">References</h2>
                         <ul>
+                            <li>A simple history of the Internet. (2014, July 3). Retrieved from intetics: http://intetics.com/blog/a-simple-history-of-the-internet/</li>
                             <li>Connolly, D. (2004, September 1). HTTP/1.1. Retrieved from Internet RFC 2616: https://www.w3.org/Protocols/rfc2616/rfc2616.html</li>
-                            <li>Connolly, D. (2004, September 1). Hypertext Transfer Protocol -- HTTP/1.1. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14</li>
+                            <li>Dynamic Web Solutions Pty Ltd. (2008, May 24). Retrieved from http://www.dynamicwebs.com.au/tutorials/history.htm</li>
+                            <li>Hypertext Transfer Protocol -- HTTP/1.1. (2004, September 1). Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14</li>
                         </ul>
                     </article>
-                 </div>
 			</div>
 		</div>
 	</div>
