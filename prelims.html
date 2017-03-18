@@ -192,79 +192,79 @@
                             <ul>
                                 <li>Accept</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This field contains a semicolon-separated list of representation schemes which will be accepted in the response to this request.</li>
                                     </ul>
                                 <li>Accept-Charset</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Advertises which character set the client is able to understand.</li>
                                     </ul>
                                 <li>Accept-Encoding</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Similar to Accept, but lists the Content-Encoding types which are acceptable in the response.</li>
                                     </ul>
                                 <li>Accept-Language</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Similar to Accept, but lists the Language values which are preferable in the response.</li>
                                     </ul>
                                 <li>Authorization</li>
                                     <ul>
-                                        <li></li>
+                                        <li>If this line is present it contains authorization information. The format is To Be Specified (TBS).</li>
                                     </ul>
                                 <li>Expect</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Indicates expectations that need to be fulfilled by the server in order to properly handle the request.</li>
                                     </ul>
                                 <li>From</li>
                                     <ul>
-                                        <li></li>
+                                        <li>In Internet mail format, this gives the name of the requesting user.</li>
                                     </ul>
                                 <li>Host</li>
                                     <ul>
-                                        <li></li>
+                                        <li>specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening.</li>
                                     </ul>
                                 <li>If-Match</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Makes the request conditional.</li>
                                     </ul>
                                 <li>If-Modified-Since</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body; the Last-Modified header will contain the date of last modification. Unlike If-Unmodified-Since, If-Modified-Since can only be used with a GET or HEAD.</li>
                                     </ul>
                                 <li>If-None-Match</li>
                                     <ul>
-                                        <li></li>
+                                        <li>For GET and HEAD methods, the server will send back the requested resource, with a 200 status, only if it doesn't have an ETag matching the given ones.</li>
                                     </ul>
                                 <li>If-Range</li>
                                     <ul>
-                                        <li></li>
+                                        <li>If the condition is fulfilled, the range request will be issued and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back, with a 200 OK status.</li>
                                     </ul>
                                 <li>If-Unmodified-Since</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</li>
                                     </ul>
                                 <li>Max-Forwards</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This header is used only with the TRACE method, to limit the number of proxies or other intermediaries that a request goes through.</li>
                                     </ul>
                                 <li>Proxy-Authorization</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Contains the credentials to authenticate a user agent to a proxy server, usually after the server has responded with a 407 Proxy Authentication Required status and the Proxy-Authenticate header.</li>
                                     </ul>
                                 <li>Range</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Indicates the part of a document that the server should return.</li>
                                     </ul>
                                 <li>Referer</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This optional header field allows the client to specify, for the server's benefit, the address of the document from which the URI in the request was obtained.</li>
                                     </ul>
                                 <li>TE</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Specifies the transfer encodings the user agent is willing to accept.</li>
                                     </ul>
                                 <li>User-Agent</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This line if present gives the software program used by the original client.</li>
                                     </ul>
                             </ul>
                     </details>
