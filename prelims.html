@@ -361,11 +361,11 @@
                             <ul>  
                                 <li>100 Continue</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.</li>
                                     </ul>
                                 <li>101 Switching Protocols</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This code is sent in response to an Upgrade request header by the client, and indicates the protocol the server is switching too.</li>
                                     </ul>
                             </ul>
                     </details>
@@ -374,31 +374,35 @@
                             <ul>  
                                 <li>200 OK</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request has succeeded. The meaning of a success varies depending on the HTTP method:
+					GET: The resource has been fetched and is transmitted in the message body.
+					HEAD: The entity headers are in the message body.
+					POST: The resource describing the result of the action is transmitted in the message body.
+					TRACE: The message body contains the request message as received by the server</li>
                                     </ul>
                                 <li>201 Created</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request has succeeded and a new resource has been created as a result of it. This is typically the response sent after a PUT request.</li>
                                     </ul>
                                 <li>202 Accepted</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request has been received but not yet acted upon.</li>
                                     </ul>
                                 <li>203 Non-Authoritative Information</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code means returned meta-information set is not exact set as available from the origin server, but collected from a local or a third party copy.</li>
                                     </ul>
                                 <li>204 No Content</li>
                                     <ul>
-                                        <li></li>
+                                        <li>There is no content to send for this request, but the headers may be useful.</li>
                                     </ul>
                                 <li>205 Reset Content</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code is sent after accomplishing request to tell user agent reset document view which sent this request.</li>
                                     </ul>
                                 <li>206 Partial Content</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code is used because of range header sent by the client to separate download into multiple streams.</li>
                                     </ul>
                             </ul>
                     </details>
@@ -407,35 +411,39 @@
                             <ul>
                                 <li>300 Multiple Choices</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request has more than one possible responses.</li>
                                     </ul>
                                 <li>301 Moved Permanently</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code means that URI of requested resource has been changed.</li>
                                     </ul>
                                 <li>302 Found</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code means that URI of requested resource has been changed temporarily.</li>
                                     </ul>
                                 <li>303 See Other</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Server sent this response to directing client to get requested resource to another URI with an GET request.</li>
                                     </ul>
                                 <li>304 Not Modified</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This is used for caching purposes. It is telling to client that response has not been modified. So, client can continue to use same cached version of response.</li>
                                     </ul>
                                 <li>305 Use Proxy</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Indicate that a requested response must be accessed by a proxy. It has been deprecated due to security concerns regarding in-band configuration of a proxy.</li>
                                     </ul>
                                 <li>306 (Unused)</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code is no longer used, it is just reserved currently. It was used in a previous version of the HTTP 1.1 specification.</li>
                                     </ul>
                                 <li>307 Temporary Redirect</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Server sent this response to directing client to get requested resource to another URI with same method that used prior request.</li>
+                                    </ul>
+				 <li>308 Permanent Redirect</li>
+                                    <ul>
+                                        <li>This means that the resource is now permanently located at another URI, specified by the location</li>
                                     </ul>
                             </ul>
                     </details>
@@ -444,75 +452,79 @@
                             <ul>
                                 <li>400 Bad Request</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response means that server could not understand the request due to invalid syntax.</li>
                                     </ul>
                                 <li>401 Unauthorized</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Authentication is needed to get requested response. This is similar to 403, but in this case, authentication is possible.</li>
                                     </ul>
                                 <li>402 Payment Required</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code is reserved for future use. Initial aim for creating this code was using it for digital payment systems however this is not used currently.</li>
                                     </ul>
                                 <li>403 Forbidden</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Client does not have access rights to the content so server is rejecting to give proper response.</li>
                                     </ul>
                                 <li>404 Not Found</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Server can not find requested resource. This response code probably is most famous one due to its frequency to occur in web.</li>
                                     </ul>
                                 <li>405 Method Not Allowed</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request method is known by the server but has been disabled and cannot be used.</li>
                                     </ul>
                                 <li>406 Not Acceptable - </li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response is sent when the web server, after performing server-driven content negotiation, doesn't find any content following the criteria given by the user agent.</li>
                                     </ul>
                                 <li>407 Proxy Authentication Required</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This is similar to 401 but authentication is needed to be done by a proxy.</li>
                                     </ul>
                                 <li>408 Request Timeout</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response is sent on an idle connection by some servers, even without any previous request by the client.</li>
                                     </ul>
                                 <li>409 Conflict</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response would be sent when a request conflict with current state of server.</li>
                                     </ul>
                                 <li>410 Gone</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response would be sent when requested content has been deleted from server.</li>
                                     </ul>
                                 <li>411 Length Required</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Server rejected the request because the Content-Length header field is not defined and the server requires it.</li>
                                     </ul>
                                 <li>412 Precondition Failed</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The client has indicated preconditions in its headers which the server does not meet.</li>
                                     </ul>
                                 <li>413 Request Entity Too Large</li>
                                     <ul>
-                                        <li></li>
+                                        <li>Request entity is larger than limits defined by server; the server might close the connection or return an Retry-After header field.</li>
                                     </ul>
                                 <li>414 Request-URI Too Long</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The URI requested by the client is longer than the server is willing to interpret.</li>
                                     </ul>
                                 <li>415 Unsupported Media Type</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The media format of the requested data is not supported by the server, so the server is rejecting the request.</li>
                                     </ul>
                                 <li>416 Requested Range Not Satisfiable</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The range specified by the Range header field in the request can't be fulfilled; it's possible that the range is outside the size of the target URI's data.</li>
                                     </ul>
                                 <li>417 Expectation Failed</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This response code means the expectation indicated by the Expect request header field can't be met by the server.</li>
+                                    </ul>
+				<li>426 Upgrade Required</li>
+                                    <ul>
+                                        <li>The server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.</li>
                                     </ul>
                             </ul>
                     </details>
@@ -521,27 +533,27 @@
                             <ul>
                                 <li>500 Internal Server Error</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The server has encountered a situation it doesn't know how to handle.</li>
                                     </ul>
                                 <li>501 Not Implemented</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The request method is not supported by the server and cannot be handled.</li>
                                     </ul>
                                 <li>502 Bad Gateway</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This error response means that the server, while working as a gateway to get a response needed to handle the request, got an invalid response.</li>
                                     </ul>
                                 <li>503 Service Unavailable</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The server is not ready to handle the request.</li>
                                     </ul>
                                 <li>504 Gateway Timeout</li>
                                     <ul>
-                                        <li></li>
+                                        <li>This error response is given when the server is acting as a gateway and cannot get a response in time.</li>
                                     </ul>
                                 <li>505 HTTP Version Not Supported</li>
                                     <ul>
-                                        <li></li>
+                                        <li>The HTTP version used in the request is not supported by the server.</li>
                                     </ul>
                             </ul>
                     </details>
