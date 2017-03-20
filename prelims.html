@@ -10,53 +10,56 @@
 <body>
     <header>
     <!-- NAVIGATION -->
-	<nav role="navigation">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li>
-				<a href="prelims.html">PRELIMS</a>
+	<nav>
+      <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="prelims.html">PRELIMS</a></li>
+            <!-- midterms sub-menu -->
+            <li>
+              <a href="#">MIDTERMS</a>
+              <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
             </li>
-			<li><a href="midterms.html">MIDTERMS</a>
-                <div>
-					<ul>
-						<li><a href="#">HTML</a></li>
-						<li><a href="#">CSS</a></li>
-						<li><a href="#">JavaScript</a></li>
-						<li><a href="#">PHP</a></li>
-					</ul>
-                </div>
+            <li>
+              <a href="#">FINALS</a>
+              <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
             </li>
-            <li><a href="finals.html">FINALS</a></li>
-            <li><a href="AboutUs.html">ABOUT US</a></li>
-		</ul>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
     </nav>
     </header>
     
     
     <!-- TABLE OF CONTENTS -->
-    <section id="content">
-        <h1>CONTENTS</h1>
-            <ol class="rounded-list">
-            <li><a href="#internet">Internet</a><a href ="#world-wide-web">World Wide Web</a></li>
+    <div class="tab-con">
+        <h1>Table of Contents</h1>
+            <details>
+        <summary id="tab-con-with-sub">
+            <img src="images/arrowdown.png">
+        </summary>
                 <ol>
-		            <li><a href="#intro">Introduction</a></li>
-                    <li><a href="#history-internet">History of Internet</a></li>
-		        </ol> 
+                    <li id="subcon"><a href="#internet">Internet</a></li>
+                    <li id="sub-con"><a href ="#world-wide-web">World Wide Web</a></li>
+		            <li id="subcon"><a href="#intro">Introduction</a></li>
+                    <li id="subcon"><a href="#history-internet">History of Internet</a></li>
             <li><a href="#http">HTTP</a>
-                <ol>
-                    <li><a href="#http-versions">HTTP Versions</a></li>
-                    <li><a href="#responsemessage">Response Messages</a></li>
-                    <li><a href="#requestmethods">Request Methods</a></li>
-                    <li><a href="#syntax-uri">Learning About the Syntax of a Generic URI</a></li>
-                    <li><a href="#methoddefinitions">Method Definitions</a></li>
-                    <li><a href="#messageheaders">Message Header Definitions</a></li>
-                    <li><a href="#statuscodes">Status Codes</a></li>
-                </ol>
-            <li><a href="#terms">Glossary of Terms</a></li>
-            <li><a href="#references">References</a></li>
-            </ol>
-        
-    </section>
+                    <li id="subcon"><a href="#http-versions">HTTP Versions</a></li>
+                    <li id="subcon"><a href="#responsemessage">Response Messages</a></li>
+                    <li id="subcon"><a href="#requestmethods">Request Methods</a></li>
+                    <li id="subcon"><a href="#syntax-uri">Learning About the Syntax of a Generic URI</a></li>
+                    <li id="subcon"><a href="#messageheaders">Message Header Definitions</a></li>
+                    <li id="subcon"><a href="#statuscodes">Status Codes</a></li>
+              <li id="subcon"><a href="#terms">Glossary of Terms</a></li>
+            <li id="subcon"><a href="#references">References</a></li>
+            </details>
+    </div>
         
 	<div id="page">  <!-- wraps and defines overall page width, centers it -->
 		<div id="content"> <!-- content area of page -->
@@ -98,7 +101,7 @@
                 </tr>
                 <tr>
                     <td>1969</td>
-                    <td>Internet was introduced to the public, universities and researches were connected to <strong>ARPA</strong>.</td>
+                    <td>Internet was introduced to the public, and universities and researches were connected to <strong>ARPA</strong>.</td>
                 </tr>
                 <tr>
                     <td>1972</td>
@@ -210,21 +213,7 @@
                             </ul>
 					</details>
                     </section>
-                    
-                    <section>
-				    <dl>
-					<dt id="syntax-uri">Syntax of a generic <a href="#uri">URI</a></dt>
-						<dd>HTTP Scheme (http: or https:)</dd>
-						<dd>Authentication Information (optional)<dd>
-						<dd>Host</dd>
-						<dd>Port number (optional)</dd>
-						<dd>Path to the resources</dd>
-						<dd>Scheme-specific parameters (optional)</dd>
-						<dd>URL query (optional)</dd>
-						<dd>Bookmark (or fragment identifier) (optional)</dd>
-                    </dl>
-                    </section>			
-				    
+
                     <section>
 					<details>
 						<summary> Extension Method </summary>
@@ -244,6 +233,22 @@
 							</ul>
 					</details>
                     </section>
+                    
+                                        
+                    <section>
+				    <dl>
+					<dt id="syntax-uri">Syntax of a generic <a href="#uri">URI</a></dt>
+						<dd>HTTP Scheme (http: or https:)</dd>
+						<dd>Authentication Information (optional)<dd>
+						<dd>Host</dd>
+						<dd>Port number (optional)</dd>
+						<dd>Path to the resources</dd>
+						<dd>Scheme-specific parameters (optional)</dd>
+						<dd>URL query (optional)</dd>
+						<dd>Bookmark (or fragment identifier) (optional)</dd>
+                    </dl>
+                    </section>	
+				    
 				
 				    <section>
                     <h1 id="messageheaders">HTTP Message Header Fields</h1>
@@ -687,36 +692,36 @@
                     <h2 id="terms">Glossary of Terms</h2>
                     <p>This short glossary is intended to provide a useful and accessible set of definitions for the terms that we use in web systems and technologies.</p>
                     <ul>
-                        <li id="uri">Cache</li>  
+                        <li id="uri"><strong>Cache</strong></li>  
 							<dd> - a cache (pronounced CASH) is a place to store something temporarily in a computing environment. </dd>
-                        <li id="email">E-mail</li>
+                        <li id="email"><strong>E-mail</strong></li>
 							<dd> - also known as Electronic Mail, is the exchange of computer-stored messages by telecommunication.  </dd>
-                        <li id="html">HTML</li>
+                        <li id="html"><strong>HTML</strong></li>
 							<dd> - HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file 
 							intended for display on a World Wide Web browser page. The markup tells the Web browser 
 							how to display a Web page's words and images for the user. </dd>
-                        <li id="https">HTTPS</li>
+                        <li id="https"><strong>HTTPS</strong></li>
 							<dd> - Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over 
 							which data is sent between your browser and the website that you are connected to. </dd>
-                        <li id="ietf">IETF</li>
+                        <li id="ietf"><strong>IETF</strong></li>
 							<dd> - short for Internet Engineering Task Force, is a large open international community of network
 							designers, operators, vendors, and researchers concerned with the evolution of the Internet.</dd>
-                        <li id="protocol">Protocol</li>
+                        <li id="protocol"><strong>Protocol</strong></li>
 							<dd> - it is a set of rules or procedures for transmitting data between electronic devices, such as computers.</dd>
-                        <li id="tcp-ip">TCP/IP</li>
+                        <li id="tcp-ip"><strong>TCP/IP</strong></li>
 							<dd> - also known as Transmission Control Protocol/Internet Protocol, is a set of networking protocols that allows two or more computers to communicate. </dd>
-                        <li id="#tim">Tim Berners-Lee</li>
+                        <li id="tim"><strong>Tim Berners-Lee</strong></li>
 							<dd> - also known as TimBL, is an English computer scientist, best known as the inventor of the World Wide Web.</dd>
 							<dd> - Berners-Lee is also the director of the World Wide Web Consortium (W3C), which oversees the continued development of the Web. </dd>
-                        <li id="#uri">URI</li>    
+                        <li id="uri"><strong>URI</strong></li>    
 							<dd> - Uniform Resource Identifier is a sequence of characters that identifies a logical or physical resource.</dd>
-						<li id="#cerf">Vinton Cerf</li>
+						<li id="cerf"><strong>Vinton Cerf</strong></li>
 							<dd> - is an American Internet pioneer, who is recognized as one of "the fathers of the Internet", sharing this title with TCP/IP co-inventor Bob Kahn.</dd>
-                        <li id="#webserver">Web Server</li>
+                        <li id="webserver"><strong>Web Server</strong></li>
 							<dd> - it is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.</dd>
-                        <li id="#webclient">Web Client</li>
+                        <li id="webclient"><strong>Web Client</strong></li>
 							<dd> - a web client is a program capable of communicating with Web servers, requesting and receiving information from them, and processing it for display or other uses.</dd>
-                        <li id="w3c">W3C</li>
+                        <li id="w3c"><strong>W3C</strong></li>
 							<dd> - World Wide Web Consortium (W3C) is an international community where Member organizations, 
 							a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee 
 							and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential.</dd>
@@ -748,12 +753,14 @@
 			</div>
 		</div>
 	</div>
+        </div>
         
-	<!-- FOOTER -->
+    <!-- FOOTER -->
 		<div class="line">
 				<footer>  
-						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Joy Cabildo | Gian Dumpit | Bryn Edades | Crislyn Alawas
-				</footer>
+						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Crislyn Alawas | Gian Dumpit | Joy Cabildo | Bryn Edades 
+                </footer>
 		</div>
+    </div>
 </body>    
 </html>
