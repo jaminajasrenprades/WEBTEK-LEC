@@ -13,6 +13,17 @@ html {
     -ms-text-size-adjust:100%
 }
 
+/* Banner */
+.home-banner {
+    background: black url('../styles/banner.jpg') no-repeat fixed center;
+    background-size: cover;
+    /* TODO: Remove later */
+    border: none;
+    padding-top: 15vh;
+    height: 100vh;
+    font-size: 3em;
+}
+
 /* NAVIGATION */
 header {
     background: linear-gradient(to left, rgba(54, 194, 182, 0.96) 0, rgba(62, 188, 207, 0.96) 100%);
@@ -348,7 +359,7 @@ dd {
 }
 
 .box {
-	width: 950px;
+	width: 130%;
 	background-image: url("../styles/bg.jpg");
 }
 
@@ -363,7 +374,7 @@ details {
 details summary {
     font-size: 18px;
     vertical-align: top;
-    background: #333;
+    background: gray;
     color: #FFF;
     padding: 5px 10px;
     outline: none;
@@ -386,7 +397,7 @@ details summary:before {
     height: 18px;
     margin-right: 8px;
     content: "";
-    background-image: url();
+    background-image: url(../styles/icon.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
