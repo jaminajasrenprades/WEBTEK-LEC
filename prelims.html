@@ -9,35 +9,28 @@
 	
 <body>
     <header>
-	<!-- NAV -->
-	<div id="navigation">
-			<ul class="navigation">
-           		<li><a href="index.html">HOME</a></li>
-                <li>
-                    <a href="prelims.html">PRELIMS</a> 
-                </li>    
-				<li>
-                    <a href="#">MIDTERMS</a>
-                     <ul>
-                        <li><a href="midterms/html.html">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
-				</li>
-                <li>
-                    <a href="#">FINALS</a>
-                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-				</li>
-				<li>
-                    <a href="AboutUs.html">ABOUT US</a>
-                </li>
-            </ul>
-        </div>
+    <!-- NAVIGATION -->
+	<nav role="navigation">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li>
+				<a href="prelims.html">PRELIMS</a>
+            </li>
+			<li><a href="#">MIDTERMS</a>
+                <div>
+					<ul>
+						<li><a href="html.html">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
+						<li><a href="#">PHP</a></li>
+					</ul>
+                </div>
+            </li>
+            <li><a href="#">FINALS</a></li>
+		</ul>
+    </nav>
     </header>
+    
     
     <!-- TABLE OF CONTENTS -->
     <section id="content">
@@ -61,6 +54,8 @@
             <li><a href="#terms">Glossary of Terms</a></li>
             <li><a href="#references">References</a></li>
             </ol>
+            </li>
+        </nav>
     </section>
         
 	<div id="page">  <!-- wraps and defines overall page width, centers it -->
@@ -97,21 +92,9 @@
                 </tr>
                 </thead>
                 <tbody>
-		<tr>
-                    <td>1963</td>
-                    <td><Strong>ASCII</Strong> (American Standard Code for Information Exchange) is developed by a joint industry-government committee. </td>
-                </tr>
-                 <tr>
-                    <td>1965</td>
-                    <td>Lawrence Roberts &amp; Thomas Marill Created the First Wide-area Network</td>
-                </tr>
                 <tr>
-                    <td>1966</td>
-                    <td>The APRAnet Project was initiated by Robert Taylor. </td>
-                </tr>
-                <tr>
-                    <td>1968</td>
-                    <td>UCLA Develops ARPAnet Host Level Protocols</td>
+                    <td>1960</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>1969</td>
@@ -122,8 +105,8 @@
                     <td>Killer application was born called <a href="#email">E-mail</a>.</td>
                 </tr>
                 <tr>
-                    <td>1979</td>
-                    <td>USENET forms to host news and discussion groups.</td>
+                    <td>1977</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>1980</td>
@@ -705,38 +688,38 @@
                     <p>This short glossary is intended to provide a useful and accessible set of definitions for the terms that we use in web systems and technologies.</p>
                     <ul>
                         <li id="uri">Cache</li>  
-				<dd> - a cache (pronounced CASH) is a place to store something temporarily in a computing environment. </dd>
+							<dd> - a cache (pronounced CASH) is a place to store something temporarily in a computing environment. </dd>
                         <li id="email">E-mail</li>
-				<dd> - also known as Electronic Mail, is the exchange of computer-stored messages by telecommunication.  </dd>
+							<dd> - also known as Electronic Mail, is the exchange of computer-stored messages by telecommunication.  </dd>
                         <li id="html">HTML</li>
-				<dd> - HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file 
-				intended for display on a World Wide Web browser page. The markup tells the Web browser 
-				how to display a Web page's words and images for the user. </dd>
+							<dd> - HTML (Hypertext Markup Language) is the set of markup symbols or codes inserted in a file 
+							intended for display on a World Wide Web browser page. The markup tells the Web browser 
+							how to display a Web page's words and images for the user. </dd>
                         <li id="https">HTTPS</li>
-				<dd> - Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over 
-				which data is sent between your browser and the website that you are connected to. </dd>
+							<dd> - Hyper Text Transfer Protocol Secure (HTTPS) is the secure version of HTTP, the protocol over 
+							which data is sent between your browser and the website that you are connected to. </dd>
                         <li id="ietf">IETF</li>
-				<dd> - short for Internet Engineering Task Force, is a large open international community of network
-				designers, operators, vendors, and researchers concerned with the evolution of the Internet.</dd>
+							<dd> - short for Internet Engineering Task Force, is a large open international community of network
+							designers, operators, vendors, and researchers concerned with the evolution of the Internet.</dd>
                         <li id="protocol">Protocol</li>
-				<dd> - it is a set of rules or procedures for transmitting data between electronic devices, such as computers.</dd>
+							<dd> - it is a set of rules or procedures for transmitting data between electronic devices, such as computers.</dd>
                         <li id="tcp-ip">TCP/IP</li>
-				<dd> - also known as Transmission Control Protocol/Internet Protocol, is a set of networking protocols that allows two or more computers to communicate. </dd>
+							<dd> - also known as Transmission Control Protocol/Internet Protocol, is a set of networking protocols that allows two or more computers to communicate. </dd>
                         <li id="#tim">Tim Berners-Lee</li>
-				<dd> - also known as TimBL, is an English computer scientist, best known as the inventor of the World Wide Web.</dd>
-				<dd> - Berners-Lee is also the director of the World Wide Web Consortium (W3C), which oversees the continued development of the Web. </dd>
+							<dd> - also known as TimBL, is an English computer scientist, best known as the inventor of the World Wide Web.</dd>
+							<dd> - Berners-Lee is also the director of the World Wide Web Consortium (W3C), which oversees the continued development of the Web. </dd>
                         <li id="#uri">URI</li>    
-				<dd> - Uniform Resource Identifier is a sequence of characters that identifies a logical or physical resource.</dd>
-			<li id="#cerf">Vinton Cerf</li>
-				<dd> - is an American Internet pioneer, who is recognized as one of "the fathers of the Internet", sharing this title with TCP/IP co-inventor Bob Kahn.</dd>
+							<dd> - Uniform Resource Identifier is a sequence of characters that identifies a logical or physical resource.</dd>
+						<li id="#cerf">Vinton Cerf</li>
+							<dd> - is an American Internet pioneer, who is recognized as one of "the fathers of the Internet", sharing this title with TCP/IP co-inventor Bob Kahn.</dd>
                         <li id="#webserver">Web Server</li>
-				<dd> - it is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.</dd>
+							<dd> - it is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.</dd>
                         <li id="#webclient">Web Client</li>
-				<dd> - a web client is a program capable of communicating with Web servers, requesting and receiving information from them, and processing it for display or other uses.</dd>
+							<dd> - a web client is a program capable of communicating with Web servers, requesting and receiving information from them, and processing it for display or other uses.</dd>
                         <li id="w3c">W3C</li>
-				<dd> - World Wide Web Consortium (W3C) is an international community where Member organizations, 
-				a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee 
-				and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential.</dd>
+							<dd> - World Wide Web Consortium (W3C) is an international community where Member organizations, 
+							a full-time staff, and the public work together to develop Web standards. Led by Web inventor Tim Berners-Lee 
+							and CEO Jeffrey Jaffe, W3C's mission is to lead the Web to its full potential.</dd>
                     </ul>
                     </section>
 
@@ -745,22 +728,21 @@
                     <h2 id="references">References</h2>
                         <ul>
                             <li>A simple history of the Internet. (2014, July 3). Retrieved from intetics: http://intetics.com/blog/a-simple-history-of-the-internet/</li>
-			    <li>Comodo. (n.d.). Retrieved March 19, 2017, from https://www.instantssl.com/ssl-certificate-products/https.html </li>
+							<li>Comodo. (n.d.). Retrieved March 19, 2017, from https://www.instantssl.com/ssl-certificate-products/https.html </li>
                             <li>Connolly, D. (2004, September 1). HTTP/1.1. Retrieved from Internet RFC 2616: https://www.w3.org/Protocols/rfc2616/rfc2616.html</li>
                             <li>Dynamic Web Solutions Pty Ltd. (2008, May 24). Retrieved from http://www.dynamicwebs.com.au/tutorials/history.htm</li>
                             <li>Hypertext Transfer Protocol -- HTTP/1.1. (2004, September 1). Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14</li>
-			    <li>IETF. (n.d.). Retrieved March 19, 2017, from http://www.webopedia.com/TERM/I/IETF.html </li>
-			    <li>Indiana University Indiana University Indiana University. (n.d.). Retrieved March 19, 2017, from https://kb.iu.edu/d/abkr</li>
-			    <li>The Editors of Encyclopædia Britannica. (2016, June 15). Protocol. Retrieved March 19, 2017, from https://www.britannica.com/technology/protocol-computer-science </li>
-			    <li>Tim Berners-Lee. (2017, March 16). Retrieved March 19, 2017, from https://en.wikipedia.org/wiki/Tim_Berners-Lee </li>
-			    <li>Vint Cerf. (2017, March 18). Retrieved March 19, 2017, from https://en.wikipedia.org/wiki/Vint_Cerf</li>
-			    <li>Web client. (n.d.). Retrieved March 19, 2017, from http://itlaw.wikia.com/wiki/Web_client</li>
-			    <li>What is cache (computing)? - Definition from WhatIs.com. (n.d.). Retrieved March 19, 2017, from http://searchstorage.techtarget.com/definition/cache </li>
-			    <li>What is Email(electronic Mail or Email)? - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchexchange.techtarget.com/definition/e-mail-electronic-mail-or-email. </li>
-			    <li>What is HTML(Hypertext Markup Language) - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchmicroservices.techtarget.com/definition/HTML-Hypertext-Markup-Language </li>
-			    <li>What is URI(Uniform Resource Identifier) - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchmicroservices.techtarget.com/definition/URI-Uniform-Resource-Identifier </li>
-			    <li>What is Web server? - Definition from WhatIs.com. (n.d.). Retrieved March 19, 2017, from http://whatis.techtarget.com/definition/Web-server</li>
-			    <li>Internet Hall of Fame. (2006). Retrieved from http://internethalloffame.org/internet-history/timeline</li>
+							<li>IETF. (n.d.). Retrieved March 19, 2017, from http://www.webopedia.com/TERM/I/IETF.html </li>
+							<li>Indiana University Indiana University Indiana University. (n.d.). Retrieved March 19, 2017, from https://kb.iu.edu/d/abkr</li>
+							<li>The Editors of Encyclopædia Britannica. (2016, June 15). Protocol. Retrieved March 19, 2017, from https://www.britannica.com/technology/protocol-computer-science </li>
+							<li>Tim Berners-Lee. (2017, March 16). Retrieved March 19, 2017, from https://en.wikipedia.org/wiki/Tim_Berners-Lee </li>
+							<li>Vint Cerf. (2017, March 18). Retrieved March 19, 2017, from https://en.wikipedia.org/wiki/Vint_Cerf</li>
+							<li>Web client. (n.d.). Retrieved March 19, 2017, from http://itlaw.wikia.com/wiki/Web_client</li>
+							<li>What is cache (computing)? - Definition from WhatIs.com. (n.d.). Retrieved March 19, 2017, from http://searchstorage.techtarget.com/definition/cache </li>
+							<li>What is Email(electronic Mail or Email)? - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchexchange.techtarget.com/definition/e-mail-electronic-mail-or-email. </li>
+							<li>What is HTML(Hypertext Markup Language) - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchmicroservices.techtarget.com/definition/HTML-Hypertext-Markup-Language </li>
+							<li>What is URI(Uniform Resource Identifier) - Definition from WhatIs.com. (n.d) . Retrieved March 19, 2017, from http://searchmicroservices.techtarget.com/definition/URI-Uniform-Resource-Identifier </li>
+							<li>What is Web server? - Definition from WhatIs.com. (n.d.). Retrieved March 19, 2017, from http://whatis.techtarget.com/definition/Web-server</li>
                         </ul>
                     </article>
 			</div>
