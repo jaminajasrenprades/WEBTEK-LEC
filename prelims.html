@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Styles -->
+	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/nav.css"/>
+    
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One|Ultra" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 		<title>Prelims</title>
 </head>
-	
 <body>
     <header>
     <!-- NAVIGATION -->
-	<nav>
-      <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="prelims.html">PRELIMS</a></li>
-            <!-- midterms sub-menu -->
+    <div id="logo" class="menuUp">
+        <h1>Web Systems and Technologies</h1>
+        <div id="navToggle"><a href="#">Menu</a></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prelims.html">Prelims</a></li>
             <li>
-              <a href="#">MIDTERMS</a>
-              <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
+                <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </nav>
             </li>
-            <li>
-              <a href="#">FINALS</a>
+           <li>
+                <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
             </li>
-            <li><a href="AboutUs.html">About Us</a></li>
+          
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="aboutus.html">Our Team</a></li>
         </ul>
     </nav>
-    </header>
-    
+</header>
     
     <!-- TABLE OF CONTENTS -->
     <div class="tab-con">
-        <h1>Table of Contents</h1>
             <details>
-        <summary id="tab-con-with-sub">
-            <img src="images/arrowdown.png">
-        </summary>
-                <ol>
+                <summary id="tab-con-with-sub">
+                    <img src="images/arrowdown.png" alt="arrow">
+                </summary>
+                    <h2 class="table-of-contents">Table of Contents</h2>
                     <li id="subcon"><a href="#internet">Internet</a></li>
-                    <li id="sub-con"><a href ="#world-wide-web">World Wide Web</a></li>
+                    <li id="subcon"><a href ="#world-wide-web">World Wide Web</a></li>
 		            <li id="subcon"><a href="#intro">Introduction</a></li>
                     <li id="subcon"><a href="#history-internet">History of Internet</a></li>
-            <li><a href="#http">HTTP</a>
+                    <li><a href="#http">HTTP</a>
                     <li id="subcon"><a href="#http-versions">HTTP Versions</a></li>
                     <li id="subcon"><a href="#responsemessage">Response Messages</a></li>
                     <li id="subcon"><a href="#requestmethods">Request Methods</a></li>
-                    <li id="subcon"><a href="#syntax-uri">Learning About the Syntax of a Generic URI</a></li>
+                    <li id="subcon"><a href="#syntax-uri">Syntax of a Generic URI</a></li>
                     <li id="subcon"><a href="#messageheaders">Message Header Definitions</a></li>
                     <li id="subcon"><a href="#statuscodes">Status Codes</a></li>
-              <li id="subcon"><a href="#terms">Glossary of Terms</a></li>
-            <li id="subcon"><a href="#references">References</a></li>
+                    <li id="subcon"><a href="#terms">Terminologies</a></li>
+                    <li id="subcon"><a href="#references">References</a></li>
             </details>
     </div>
         
 	<div id="page">  <!-- wraps and defines overall page width, centers it -->
 		<div id="content"> <!-- content area of page -->
 			<div class="box">
-				<div class="box-padding">				
+				<div class="box-padding"> 
+                <!-- content goes below this line -->				
                 <!-- ARTICLE -->
                 <article id="internet-www">
                 <section>
@@ -178,7 +196,7 @@
 								<li>Empty Line</li>
 							</ul>
 					</details>
-                </section>
+                    </section>
                 
                 <section>
 				<h1 id="requestmethods">HTTP Request Methods</h1>
@@ -253,176 +271,170 @@
                     <h1 id="messageheaders">HTTP Message Header Fields</h1>
                     <details>
                         <summary>General Header Fields</summary>
-                            <ul>
-                                <li>Cache Control</li>
-                                    <ul>
-                                        <li>This field is used to control the caching of a document, either a reponse or a request.</li>
-                                    </ul>
-                                <li>Connection</li>
-                                    <ul>
-                                        <li>This field is used to control the connection and keep it alive.</li>
-                                    </ul>
-                                <li>Date</li>
-                                    <ul>
-                                        <li>This field indicates the local time at which the message originated.</li>
-                                    </ul>
-                                <li>Pragma</li>
-                                    <ul>
-                                        <li>This field specifies implementation-specific options.</li>
-                                    </ul>
-                                <li>Trailer</li>
-                                    <ul>
-                                        <li>This field indicates the headers included in a checked trailer.</li>
-                                    </ul>
-                                <li>Transfer-Encoding</li>
-                                    <ul>
-                                        <li>This field specifies the transfer encoding used in transferring an entity.</li>
-                                    </ul>
-                                <li>Upgrade</li>
-                                    <ul>
-                                        <li>This field requests an upgrade or switch of protocols</li>
-                                    </ul>
-                                <li>Via</li>
-                                    <ul>
-                                        <li>This field indicates the proxies used and also the proxy controls.</li>
-                                    </ul>
-                                <li>Warning</li>
-                                    <ul>
-                                        <li>This field will give a warning if there is a possible problem</li>
-                                    </ul>
-                            </ul>
+                                <dd><strong>Cache Control</strong></dd>
+                                    <dd>
+                                        This field is used to control the caching of a document, either a reponse or a request.
+                                    </dd>
+                                <dd><strong>Connection</strong></dd>
+                                    <dd>
+                                        This field is used to control the connection and keep it alive.
+                                    </dd>
+                                <dd><strong>Date</strong></dd>
+                                    <dd>
+                                        This field indicates the local time at which the message originated.
+                                    </dd>
+                                <dd><strong>Pragma</strong></dd>
+                                    <dd>
+                                        This field specifies implementation-specific options.
+                                    </dd>
+                                <dd><strong>Trailer</strong></dd>
+                                    <dd>
+                                        This field indicates the headers included in a checked trailer.
+                                    </dd>
+                                <dd><strong>Transfer-Encoding</strong></dd>
+                                    <dd>
+                                        This field specifies the transfer encoding used in transferring an entity.
+                                    </dd>
+                                <dd><strong>Upgrade</strong></dd>
+                                    <dd>
+                                        This field requests an upgrade or switch of protocols.
+                                    </dd>
+                                <dd><strong>Via</strong></dd>
+                                    <dd>
+                                        This field indicates the proxies used and also the proxy controls.
+                                    </dd>
+                                <dd><strong>Warning</strong></dd>
+                                    <dd>
+                                        This field will give a warning if there is a possible problem.
+                                    </dd>
                     </details>
                     </section>
                     
                     <section>
 				    <details>
                         <summary>Request Header Fields</summary>
-                            <ul>
-                                <li>Accept</li>
-                                    <ul>
-                                        <li>This field contains a semicolon-separated list of representation schemes which will be accepted in the response to this request.</li>
-                                    </ul>
-                                <li>Accept-Charset</li>
-                                    <ul>
-                                        <li>Advertises which character set the client is able to understand.</li>
-                                    </ul>
-                                <li>Accept-Encoding</li>
-                                    <ul>
-                                        <li>Similar to Accept, but lists the Content-Encoding types which are acceptable in the response.</li>
-                                    </ul>
-                                <li>Accept-Language</li>
-                                    <ul>
-                                        <li>Similar to Accept, but lists the Language values which are preferable in the response.</li>
-                                    </ul>
-                                <li>Authorization</li>
-                                    <ul>
-                                        <li>If this line is present it contains authorization information. The format is To Be Specified (TBS).</li>
-                                    </ul>
-                                <li>Expect</li>
-                                    <ul>
-                                        <li>Indicates expectations that need to be fulfilled by the server in order to properly handle the request.</li>
-                                    </ul>
-                                <li>From</li>
-                                    <ul>
-                                        <li>In Internet mail format, this gives the name of the requesting user.</li>
-                                    </ul>
-                                <li>Host</li>
-                                    <ul>
-                                        <li>specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening.</li>
-                                    </ul>
-                                <li>If-Match</li>
-                                    <ul>
-                                        <li>Makes the request conditional.</li>
-                                    </ul>
-                                <li>If-Modified-Since</li>
-                                    <ul>
-                                        <li>The server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body; the Last-Modified header will contain the date of last modification. Unlike If-Unmodified-Since, If-Modified-Since can only be used with a GET or HEAD.</li>
-                                    </ul>
-                                <li>If-None-Match</li>
-                                    <ul>
-                                        <li>For GET and HEAD methods, the server will send back the requested resource, with a 200 status, only if it doesn't have an ETag matching the given ones.</li>
-                                    </ul>
-                                <li>If-Range</li>
-                                    <ul>
-                                        <li>If the condition is fulfilled, the range request will be issued and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back, with a 200 OK status.</li>
-                                    </ul>
-                                <li>If-Unmodified-Since</li>
-                                    <ul>
-                                        <li>The server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</li>
-                                    </ul>
-                                <li>Max-Forwards</li>
-                                    <ul>
-                                        <li>This header is used only with the TRACE method, to limit the number of proxies or other intermediaries that a request goes through.</li>
-                                    </ul>
-                                <li>Proxy-Authorization</li>
-                                    <ul>
-                                        <li>Contains the credentials to authenticate a user agent to a proxy server, usually after the server has responded with a 407 Proxy Authentication Required status and the Proxy-Authenticate header.</li>
-                                    </ul>
-                                <li>Range</li>
-                                    <ul>
-                                        <li>Indicates the part of a document that the server should return.</li>
-                                    </ul>
-                                <li>Referer</li>
-                                    <ul>
-                                        <li>This optional header field allows the client to specify, for the server's benefit, the address of the document from which the URI in the request was obtained.</li>
-                                    </ul>
-                                <li>TE</li>
-                                    <ul>
-                                        <li>Specifies the transfer encodings the user agent is willing to accept.</li>
-                                    </ul>
-                                <li>User-Agent</li>
-                                    <ul>
-                                        <li>This line if present gives the software program used by the original client.</li>
-                                    </ul>
-                            </ul>
+                                <dd><strong>Accept</strong></dd>
+                                    <dd>
+                                        This field contains a semicolon-separated list of representation schemes which will be accepted in the response to this request.
+                                    </dd>
+                                <dd><strong>Accept-Charset</strong></dd>
+                                    <dd>
+                                        Advertises which character set the client is able to understand.
+                                    </dd>
+                                <dd><strong>Accept-Encoding</strong></dd>
+                                    <dd>
+                                        Similar to Accept, but lists the Content-Encoding types which are acceptable in the response.
+                                    </dd>
+                                <dd><strong>Accept-Language</strong></dd>
+                                    <dd>
+                                        Similar to Accept, but lists the Language values which are preferable in the response.
+                                    </dd>
+                                <dd><strong>Authorization</strong></dd>
+                                    <dd>
+                                        If this line is present it contains authorization information. The format is To Be Specified (TBS).
+                                    </dd>
+                                <dd><strong>Expect</strong></dd>
+                                    <dd>
+                                        Indicates expectations that need to be fulfilled by the server in order to properly handle the request.
+                                    </dd>
+                                <dd><strong>From</strong></dd>
+                                    <dd>
+                                        In Internet mail format, this gives the name of the requesting user.
+                                    </dd>
+                                <dd><strong>Host</strong></dd>
+                                    <dd>
+                                        Specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening.
+                                    </dd>
+                                <dd><strong>If-Match</strong></dd>
+                                    <dd>
+                                        Makes the request conditional.
+                                    </dd>
+                                <dd><strong>If-Modified-Since</strong></dd>
+                                    <dd>
+                                        The server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body; the Last-Modified header will contain the date of last modification. Unlike If-Unmodified-Since, If-Modified-Since can only be used with a GET or HEAD.
+                                    </dd>
+                                <dd><strong>If-None-Match</strong></dd>
+                                    <dd>
+                                        For GET and HEAD methods, the server will send back the requested resource, with a 200 status, only if it doesn't have an ETag matching the given ones.
+                                    </dd>
+                                <dd><strong>If-Range</strong></dd>
+                                    <dd>
+                                        If the condition is fulfilled, the range request will be issued and the server sends back a 206 Partial Content answer with the appropriate body. If the condition is not fulfilled, the full resource is sent back, with a 200 OK status.
+                                    </dd>
+                                <dd><strong>If-Unmodified-Since</strong></dd>
+                                    <dd>
+                                        The server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.
+                                    </dd>
+                                <dd><strong>Max-Forwards</strong></dd>
+                                    <dd>
+                                        This header is used only with the TRACE method, to limit the number of proxies or other intermediaries that a request goes through.
+                                    </dd>
+                                <dd><strong>Proxy-Authorization</strong></dd>
+                                    <dd>
+                                        Contains the credentials to authenticate a user agent to a proxy server, usually after the server has responded with a 407 Proxy Authentication Required status and the Proxy-Authenticate header.
+                                    </dd>
+                                <dd><strong>Range</strong></dd>
+                                    <dd>
+                                        Indicates the part of a document that the server should return.
+                                    </dd>
+                                <dd><strong>Referer</strong></dd>
+                                    <dd>
+                                        This optional header field allows the client to specify, for the server's benefit, the address of the document from which the URI in the request was obtained.
+                                    </dd>
+                                <dd><strong>TE</strong></dd>
+                                    <dd>
+                                        Specifies the transfer encodings the user agent is willing to accept.
+                                    </dd>
+                                <dd><strong>User-Agent</strong></dd>
+                                    <dd>
+                                        This line if present gives the software program used by the original client.
+                                    </dd>
                     </details>
                     </section>
                     
                     <section>
                     <details>
                         <summary>Entity Header Fields</summary>
-                            <ul>
-                                <li>Allow</li>
-                                    <ul>
-                                        <li>This field shows what can you do or what can you allow with a specific header. </li>
-                                    </ul>
-                                <li>Content-Encoding</li>
-                                    <ul>
-                                        <li>This field is used as a modifier of what type of media.</li>
-                                    </ul>
-                                <li>Content-Language</li>
-                                    <ul>
-                                        <li>This field describes a page in a specific language.</li>
-                                    </ul>
-                                <li>Content-Length</li>
-                                    <ul>
-                                        <li>Ths field shows you how many bites are there in your page or the entire body. </li>
-                                    </ul>
-                                <li>Content-Location</li>
-                                    <ul>
-                                        <li>This field shows you where the content came from if the content is accessible from a location seperate from the requested resource's URI.</li>
-                                    </ul>
-                                <li>Content-MD5</li>
-                                    <ul>
-                                        <li>This field digest the entity-body to show an end-to-end message integrity check of the entity body.</li>
-                                    </ul>
-                                <li>Content-Range</li>
-                                    <ul>
-                                        <li>This field is used to range requests from byte 0-100.</li>
-                                    </ul>
-                                <li>Content-Type</li>
-                                    <ul>
-                                        <li>This field shows you what type or kind of resource you use.(sample.txt/html)</li>
-                                    </ul>
-                                <li>Expires</li>
-                                    <ul>
-                                        <li>This field gives the expiration date or time after the response is considered stale.</li>
-                                    </ul>
-                                <li>Last-Modified</li>
-                                    <ul>
-                                        <li>This field shows you the last dated time of modification.</li>
-                                    </ul>
-                            </ul>
+                                <dd><strong>Allow</strong></dd>
+                                    <dd>
+                                       This field shows what can you do or what can you allow with a specific header.
+                                    </dd>
+                                <dd><strong>Content-Encoding</strong></dd>
+                                    <dd>
+                                        This field is used as a modifier of what type of media.
+                                    </dd>
+                                <dd><strong>Content-Language</strong></dd>
+                                    <dd>
+                                        This field describes a page in a specific language.
+                                    </dd>
+                                <dd><strong>Content-Length</strong></dd>
+                                    <dd>
+                                        Ths field shows you how many bites are there in your page or the entire body.
+                                    </dd>
+                                <dd><strong>Content-Location</strong></dd>
+                                    <dd>
+                                        This field shows you where the content came from if the content is accessible from a location seperate from the requested resource's URI.
+                                    </dd>
+                                <dd><strong>Content-MD5</strong></dd>
+                                    <dd>
+                                       This field digest the entity-body to show an end-to-end message integrity check of the entity body.
+                                   </dd>
+                                <dd><strong>Content-Range</strong></dd>
+                                    <dd>
+                                        This field is used to range requests from byte 0-100.
+                                    </dd>
+                                <dd><strong>Content-Type</strong></dd>
+                                    <dd>
+                                        This field shows you what type or kind of resource you use.(sample.txt/html)
+                                    </dd>
+                                <dd><strong>Expires</strong></dd>
+                                    <dd>
+                                        This field gives the expiration date or time after the response is considered stale.
+                                    </dd>
+                                <dd><strong>Last-Modified</strong></dd>
+                                    <dd>
+                                        This field shows you the last dated time of modification.
+                                    </dd>
                     </details>
                     </section>
                     
@@ -688,7 +700,7 @@
                     </section>
                     
                     <section>
-                    <h2 id="terms">Glossary of Terms</h2>
+                    <h2 id="terms">Terminologies</h2>
                     <p>This short glossary is intended to provide a useful and accessible set of definitions for the terms that we use in web systems and technologies.</p>
                     <ul>
                         <li id="uri"><strong>Cache</strong></li>  

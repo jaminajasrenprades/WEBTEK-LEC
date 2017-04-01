@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
+    <!-- Styles -->
+	<link rel="stylesheet" media="screen" type="text/css" href="../styles/style.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="../styles/nav.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="../styles/animatedgirl.css"/>
+    
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
+    
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One|Ultra" rel="stylesheet">
@@ -16,28 +21,83 @@
 <body>
     <header>
     <!-- NAVIGATION -->
-	<nav>
-      <ul class="menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="prelims.html">PRELIMS</a></li>
-            <!-- midterms sub-menu -->
+    <div id="logo" class="menuUp">
+        <h1>Web Systems and Technologies</h1>
+        <div id="navToggle"><a href="#">Menu</a></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prelims.html">Prelims</a></li>
             <li>
-              <a href="#">MIDTERMS</a>
-              <ul>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
+                <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </nav>
             </li>
-            <li>
-              <a href="#">FINALS</a>
+           <li>
+                <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
             </li>
-            <li><a href="AboutUs.html">About Us</a></li>
+          
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="aboutus.html">Our Team</a></li>
         </ul>
     </nav>
-    </header>
+</header>
+
+    <!-- Animated girl -->  
+    <div class="background">
+      <div class="frame"></div>
+        <div class="me">
+          <div class="me-body"></div>
+          <div class="me-head">
+            <div class="hair"></div>
+            <div class="face">
+              <div class="eye-left"></div>
+              <div class="eye-right"></div>
+              <div class="mouth"></div>
+            </div> 
+            <div class="hair-front"></div>
+          </div>   
+        </div>
+      <div class="table">
+        <div class="bowl">
+           <div class="cable">
+             <div class="leaf-1"></div>
+             <div class="leaf-2"></div>
+             <div class="leaf-3"></div>
+             <div class="leaf-4"></div>
+           </div>
+        </div>
+        <div class="bowl-2">
+          <div class="caneta-1"></div>
+          <div class="caneta-2"></div>
+        </div>
+        <div class="notebook">
+          <div class="apple"></div>
+        </div>
+        <div class="book-1"></div>
+        <div class="book-2"></div>
+        <div class="book-3"></div>
+        <div class="coffee">
+          <div class="smoke"></div>
+        </div>
+      </div>
+        <div class="flower"></div>
+    </div>
     
-		
+    <!-- Members -->	
 	<div class="maincontent">
 		<div class="content">
             <p class="description">We are the students of Saint Louis University who are currently taking up Bachelor of Science in Information Technology. Enrolled to the course "Web Systems and Technology".</p>

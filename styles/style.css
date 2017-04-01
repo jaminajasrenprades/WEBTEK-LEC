@@ -1,5 +1,5 @@
 body {
-    background-image:url("../styles/background.png");
+    background-image:url("../styles/background.jpg");
     position:absolute;
     width:100%;
     height:100%;
@@ -20,108 +20,36 @@ html {
     height: 100vh;
 }
 
-/* NAVIGATION */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-/* NAVIGATION BAR */
-nav {
-  width: 70%;
-  margin: 0 auto;
-}
-
-nav .menu {
-  height: 60px;
-  background: #36363f;
-  border-radius: 5px;
-  padding: 0;
-  margin: 0;
-  text-align: center; /* center the li */
-}
-
-nav .menu li {
-  display: inline-block; 
-}
-
-nav .menu li a {
-    font-family:'Sigmar One', cursive;
-    font-size: 23px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 60px;
-    vertical-align: middle;
-    padding: 20px;
-    transition: all 0.5s;
-}
-
-nav .menu li:hover > a {
-    background: #25252B;
-    transition: all 0.5s;
-    color: #ccc;
-}
-
-/* sub-menus */
-
-.menu li > ul {
-    position: absolute;
-    margin-left: -2.21%;
-    display: none;
-    animation: slide 0.1s linear 0s normal;
-}
-
-.menu li > ul > li {
-    display: block;
-    background: #25252b;
-    border-top: 1px solid #25252f;
-}
-
-.menu li > ul > li > a {
-    display: block;
-    padding: 5px 12px;
-}
-
-.menu li:hover > ul {
-    display: block;
-    animation: slide 0.1s linear 0s normal;
-}
-
-.menu li:hover > ul li:hover > a {
-    background: #18181F;
-}
-
-
-@keyframes slide {
-  from  { transform: rotateY(35deg) skewX(10deg); }
-  to     { transform: rotateY(0deg) skewX(0deg); }
-}
-
 /* TABLE OF CONTENTS */
-
-h1 {
+.table-of-contents {
     font-family:'Ultra', serif;
     text-align: center;
-    padding: 27px;
-    font-weight: 500;
-    margin-bottom: -30px;
-    letter-spacing: -1.5px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    letter-spacing: 2.5px;
     color: inherit;
-    font-size: 30px;
+    font-size: 15px;
+}
+
+li > a {
+    font-family:'Ultra', serif;
+    text-align: center;
+    color: inherit;
+    font-size: 15px;
+    font-weight: 50;
 }
 
 .tab-con {
     background-color: #c7ccd6;
+    padding: 20px;
+    margin-top: 150px;
+    width: 30%;
+    position: center;
+    margin-left: 10px;
 }
 
 #tab-con-with-sub {
     background-color: #c7ccd6;
-    font-family: 'Sigmar One', cursive;
-	font-size: 21px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
 	line-height: 30px;
 }
 
@@ -142,7 +70,7 @@ table {
 }
 
 th {
-  background: url(../styles/in-table2.png), linear-gradient(#777, #444);
+  background: linear-gradient(#777, #444);
   border-left: 1px solid #555;
   border-right: 1px solid #777;
   border-top: 1px solid #555;
@@ -151,7 +79,7 @@ th {
   color: #fff;
   font-weight: bold;
   padding: 10px 15px;
-  position: relative;
+  position: absolute;
   text-shadow: 0 1px 0 #000;
 }
 
@@ -252,6 +180,7 @@ dt {
     font-weight:800;
     line-height:1.1;
     color:inherit;
+    margin-bottom:10px;
 }
 
 dd {
@@ -261,6 +190,7 @@ dd {
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
+    margin-bottom:15px;
 }
 
 .box {
@@ -281,7 +211,7 @@ details summary {
     vertical-align: top;
     background: #333;
     color: #FFF;
-    padding: 5px 10px;
+    padding: 8px 10px;
     outline: none;
 }
 
@@ -300,7 +230,7 @@ details summary:before {
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin-right: 8px;
+    margin-right: 10px;
     content: "";
     background-image: url();
     background-repeat: no-repeat;
@@ -309,25 +239,35 @@ details summary:before {
 
 /* Move the sprite image when the details box is open. */
 details[open] summary:before {
-    background-position: -18px 0;
+    background-position: -180px 0;
 }
 
-/* AboutUs.html */
+/* aboutus.html */
+.description {
+    font-family: 'Pangolin', regular;
+	font-size: 25px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400px;
+	line-height: 20px;
+    text-align: center;
+}
+
 .forcontent img{
 	height: 145px;
-	width: 145px;
-    border-radius: 80px;
+	width: 155px;
+    border-radius: 70px;
 	overflow:hidden;
 	float: left;
 	margin-right: 10px;
-	margin-top: -20px;
+	margin-top: -10px;
 }
 
 .maincontent {
-    line-height: 30px;
+    line-height: 50px;
     border-radius: 5px;
     width: 60%;
-    padding-top: 60px;
+    padding-top: 50px;
     margin: auto;   
 }
 
@@ -342,7 +282,7 @@ details[open] summary:before {
     font-size: 18px;
     border-radius: 10px;
     padding: 8% 8%;
-    padding-top: 7px;
+    padding-top: 20px;
     margin-top: 5%;
     height: auto;
     box-shadow: 0 4px 6px 1px rgba(0, 0, 0, .2);
@@ -357,6 +297,11 @@ h2 {
     margin-bottom: -35px;
     letter-spacing: -1.5px;
     color: inherit;
+    font-size: 20px;
+}
+
+/* html.html */
+code {
     font-size: 20px;
 }
 
@@ -375,4 +320,18 @@ footer  {
    width: 100%;
    background: #999;
    text-align: center;
+}
+
+/* Orientation of tablet */
+
+/* Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+/* Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
