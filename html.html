@@ -1,32 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" media="screen" type="text/css" href="../styles/style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+    <!-- Styles -->
+	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/nav.css"/>
+    
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One|Ultra" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 		<title>HTML</title>
 </head>
-	
 <body>
     <header>
     <!-- NAVIGATION -->
-	<nav role="navigation">
-		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li>
-				<a href="prelims.html">PRELIMS</a>
+    <div id="logo" class="menuUp">
+        <h1>Web Systems and Technologies</h1>
+        <div id="navToggle"><a href="#">Menu</a></div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="prelims.html">Prelims</a></li>
+            <li>
+                <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                    </ul>
+                </nav>
             </li>
-			<li><a href="#">MIDTERMS</a>
-                <div>
-					<ul>
-						<li><a href="html.html">HTML</a></li>
-						<li><a href="#">CSS</a></li>
-						<li><a href="#">JavaScript</a></li>
-						<li><a href="#">PHP</a></li>
-					</ul>
-                </div>
+           <li>
+                <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </nav>
             </li>
-            <li><a href="#">FINALS</a></li>
-		</ul>
+          
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="aboutus.html">Our Team</a></li>
+        </ul>
     </nav>
-    </header>
+</header>
+    
+    <!-- TABLE OF CONTENTS -->
+    <div class="tab-con">
+            <details>
+                <summary id="tab-con-with-sub">
+                    <img src="images/arrowdown.png" alt="arrow">
+                </summary>
+                    <h2 class="table-of-contents">Table of Contents</h2>
+                    <li id="subcon"><a href="#html">What is HTML?</a></li>
+                    <li id="subcon"><a href ="#html-versions">Versions of HTML</a></li>
+            </details>
+    </div>
+    
+    
+    <div id="page">  <!-- wraps and defines overall page width, centers it -->
+		<div id="content"> <!-- content area of page -->
+			<div class="box">
+				<div class="box-padding"> 
+                <!-- content goes below this line -->		
+                <!-- ARTICLE -->
+                <section>
+                    <dt id="html">Hypertext Markup Language (HTML)</dt>
+                    <dd>A markup language (not a programming language) that is used to create web pages in the World Wide Web.</dd>
+                </section>
+                    
+                <section>
+                    <dt id="html-versions">HTML Versions</dt>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML 1.0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 2.0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 3.0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 3.2</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 4.0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 4.01</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 5</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>HTML 5.1</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                    
+                <section>
+                    <h1 id="html-elements"><u>HTML Elements</u></h1>
+                    <dd>Element is a part of a webpage, which includes an opening tag with some attributes, enclosed text content, and a closing tag.</dd>
+                    <dt>Head</dt>
+					<details>
+						<summary><code>title</code></summary>
+						<img src="images/title-html.png" alt="title-html" width="30%">	
+					</details>
+                    <details>
+						<summary><code>base</code></summary>
+						<img src="images/base-html.png" alt="base-html" width="70%">	
+					</details>
+                    <details>
+						<summary><code>link</code></summary>
+						<img src="images/link-html.png" alt="link-html" width="40%">	
+					</details>
+                    <details>
+						<summary><code>meta</code></summary>
+                        <dd>This element is used to specify which character set is used, page description, keywords, author, and other metadata.</dd>
+						<img src="images/meta-html.png" alt="meta-html" width="30%">	
+					</details>
+                    <details>
+						<summary><code>style</code></summary>
+						<img src="images/style-html.png" alt="style-html" width="70%">	
+					</details>
+                    <details>
+						<summary><code>script</code></summary>
+						<dd>This element defines the client-side JavaScripts.</dd>
+					</details>
+                    
+                    <dt>Body</dt>
+					<details>
+						<summary>Grouping Elements</summary>
+						<code>span, div</code>
+					</details>
+                    <details>
+						<summary>Headings</summary>
+						<code>h1, h2, h3, h4, h5 ,h6</code>
+					</details>
+                    <details>
+						<summary>Paragraph and Break Lines</summary>
+                        <code>p, br</code>	
+					</details>
+                    <details>
+						<summary>Link and Image Tags</summary>
+						<code>href, img, mailto</code>
+                    <dd>Anchor tag - (a)</dd>
+					</details>
+                    <details>
+						<summary>List Tags</summary>
+						<code>ul, ol, dl, dt, dd, dir, menu</code>
+					</details>
+                </section>
+                        
+                <section>
+                    <h2><u>HTML5 Elements</u></h2>
+                    <code>header</code>
+                    <dd>This element contains the header content of the site.</dd>
+                    <code>footer</code>
+                    <dd>This element contains the footer of the site.</dd>
+                    <code>nav</code>
+                    <dd>This element contains the navigation menu, or the other navigation functionality of the page.</dd>
+                    <code>article</code>
+                    <dd>This element is somewhat related to section tag. But it contains related individual standalone pieces of content. Ex: blog posts, videos, images, etc.</dd>
+                    <code>section</code>
+                    <dd>This element it used to group different articles.</dd>
+                    <code>aside</code>  
+                    <dd>This element defines a block of content that is related to the main content around it, but not central to the flow of it.</dd>
+                </section>
+                    
+                <section>
+                    
+                </section>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- FOOTER -->
+		<div class="line">
+				<footer>  
+						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Crislyn Alawas | Gian Dumpit | Joy Cabildo | Bryn Edades 
+                </footer>
+		</div>
+</body>
+</html>
+    
+
