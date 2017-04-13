@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+nav {
+position : fixed;
+z-index: 10;
+width: 100%;
+margin-left: -5%;
+}
+
 header {
     background-color: rgb(140, 193, 193);
     border-bottom: 1px solid rgba(0,0,0,.15);
@@ -82,7 +89,7 @@ header {
                 header nav > ul > li > a {
                     display: block;
                     color: rgba(0,0,0,.65);
-                    font-weight: 700;
+                    font-weight: 50;
                     padding: 1.5rem 0;
                     text-decoration: none;
                     transition: 250ms all ease;
@@ -209,5 +216,5 @@ header {
 .logo {
     padding: 0px;
     height: 50px;
-    width: 200px;
+    width: 100px;
 }
