@@ -52,18 +52,16 @@
             <li><a href="aboutus.html">Our Team</a></li>
         </ul>
     </nav>
-</header>
+    </header>
     
     <!-- TABLE OF CONTENTS -->
     <div class="tab-con">
-            <details>
-                <summary id="tab-con-with-sub">
-                    <img src="images/arrowdown.png" alt="arrow">
-                </summary>
-                    <h2 class="table-of-contents">Table of Contents</h2>
+                    <h1 class="table-of-contents">Table of Contents</h1>
                     <li id="subcon"><a href="#html">What is HTML?</a></li>
                     <li id="subcon"><a href ="#html-versions">Versions of HTML</a></li>
-            </details>
+                    <li id="subcon"><a href ="#xhtml">What is XHTML?</a></li>
+                    <li id="subcon"><a href ="#xhtml-versions">Versions of XHTML</a></li>  
+                    <li id="subcon"><a href ="#htmlvsxhtml">What is the difference of HTML and XHTML?</a></li> 
     </div>
     
     
@@ -73,61 +71,64 @@
 				<div class="box-padding"> 
                 <!-- content goes below this line -->		
                 <!-- ARTICLE -->
-                <section>
-                    <dt id="html">Hypertext Markup Language (HTML)</dt>
-                    <dd>A markup language (not a programming language) that is used to create web pages in the World Wide Web.</dd>
-                </section>
-                    
-                <section>
-                    <dt id="html-versions">HTML Versions</dt>
-                    <table>
-                        <thead>
+            <section>
+            <h1 id="html">Hypertext Markup Language (HTML)</h1>
+                <p>A markup language (not a programming language) that is used to create web pages in the World Wide Web.</p>
+                <p>It was introduced by the rules of Standard Generalized Markup Language (SGML) in document type definition (DTD), by Tim-Berners-Lee in the year 1991.</p>
+                <p>Creates structured documents by denoting semantics for text like headings, lists, links, quotes etc.</p>
+            </section>
+
+            <section>
+             <h2 id="html-versions">HTML Versions</h2>
+                    <table class="table-fill">
+                       <thead>
                             <tr>
-                                <th>Version</th>
-                                <th>Description</th>
+                            <th class="text-left">Version</th>
+                            <th class="text-left">Description</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-hover">
                             <tr>
-                                <td>HTML 1.0</td>
-                                <td></td>
+                                <td class="text-left">HTML 1.0</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 2.0</td>
-                                <td></td>
+                                <td class="text-left">HTML 2.0</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 3.0</td>
-                                <td></td>
+                                <td class="text-left">HTML 3.0</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 3.2</td>
-                                <td></td>
+                                <td class="text-left">HTML 3.2</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 4.0</td>
-                                <td></td>
+                                <td class="text-left">HTML 4.0</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 4.01</td>
-                                <td></td>
+                                <td class="text-left">HTML 4.01</td>
+                                <td class="text-left">This version is <em>strict, transitional and uses frameset.</em></td>
                             </tr>
                             <tr>
-                                <td>HTML 5</td>
-                                <td></td>
+                                <td class="text-left">HTML 5</td>
+                                <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td>HTML 5.1</td>
-                                <td></td>
+                                <td class="text-left">HTML 5.1</td>
+                                <td class="text-left"></td>
                             </tr>
                         </tbody>
                     </table>
-                </section>
-                    
-                <section>
-                    <h1 id="html-elements"><u>HTML Elements</u></h1>
-                    <dd>Element is a part of a webpage, which includes an opening tag with some attributes, enclosed text content, and a closing tag.</dd>
-                    <dt>Head</dt>
+            </section>
+    
+            <section>
+            <h2 id="html-elements">HTML Elements</h2>  
+                <p>Element is a part of a webpage, which includes an opening tag with some attributes, enclosed text content, and a closing tag.</p>
+    
+                    <h1>Head</h1>
 					<details>
 						<summary><code>title</code></summary>
 						<img src="images/title-html.png" alt="title-html" width="30%">	
@@ -154,27 +155,58 @@
 						<dd>This element defines the client-side JavaScripts.</dd>
 					</details>
                     
-                    <dt>Body</dt>
+                    <h1>Body</h1>
 					<details>
 						<summary>Grouping Elements</summary>
 						<code>span, div</code>
 					</details>
                     <details>
 						<summary>Headings</summary>
-						<code>h1, h2, h3, h4, h5 ,h6</code>
+						<code>h1, h2, h3, h4, h5, h6</code>
 					</details>
                     <details>
-						<summary>Paragraph and Break Lines</summary>
-                        <code>p, br</code>	
+						<summary>Paragraphs, Break Lines, Horizontal Rules</summary>
+                        <code>p, br, hr</code>	
 					</details>
                     <details>
 						<summary>Link and Image Tags</summary>
 						<code>href, img, mailto</code>
-                    <dd>Anchor tag - (a)</dd>
+                        <h3>Anchor</h3>
+                        <code>a</code>
 					</details>
                     <details>
 						<summary>List Tags</summary>
 						<code>ul, ol, dl, dt, dd, dir, menu</code>
+					</details>
+                    <details>
+						<summary>Tables</summary>
+						<code>table, th, tr, thead, tfoot, tbody, colgroup, col</code>
+					</details>
+                    <details>
+						<summary>Structured Text</summary>
+                            <h3>Phrase elements</h3>
+						<code>em, strong, code, samp, kbd, var, cite, abbr, acronym</code>
+                            <h3>Quotations</h3>
+                            <code>blockquote, q</code>
+                            <h3>Subscripts and Superscripts</h3>
+                            <code>sub, sup</code>
+                            <h3>Preformatted texts</h3>
+                            <code>pre</code>
+					</details>
+                    <details>
+						<summary>Font Styles and Alignments</summary>
+						<code>tt, i, b, big, small, strike, s, u, fonr, basefont, center</code>
+					</details>
+                    <details>
+						<summary>Objects, images, applets</summary>
+						<code>object, img, param, applet</code>
+					</details>
+                    <details>
+						<summary>Scripts</summary>
+						<code>script, noscript</code>
+					</details>
+                    <details>
+						<summary>Frames, noframes, iframe</summary>
 					</details>
                 </section>
                         
@@ -195,19 +227,92 @@
                 </section>
                     
                 <section>
-                    
+                    <h1 id="xhtml">Extensible Hypertext Markup Language (XHTML)</h1>
+                    <p>A language which is a family of XML languages which extends or mirror versions of HTML.</p>
                 </section>
-                
+                    
+                     <section>
+                    <h2 id="xhtml-versions">XHTML Versions</h2>    
+                    <table class="table-fill">
+                       <thead>
+                            <tr>
+                            <th class="text-left">Version</th>
+                            <th class="text-left">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-left">XHTML 1.0</td>
+                                <td class="text-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">XHTML 1.1</td>
+                                <td class="text-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">XHTML 1.2</td>
+                                <td class="text-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">XHTML 2.0</td>
+                                <td class="text-left"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">HTML 5</td>
+                                <td class="text-left"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </section>
+                    
+                    <section>
+                        <h2 id="htmlvsxhtml">HTML VS. XHTML</h2>
+                        <p>HTML and XHTML are quite related to each other but here are their possible differences.</p>
+                        
+                    <table class="table-fill">
+                       <thead>
+                            <tr>
+                            <th class="text-left">HTML</th>
+                            <th class="text-left">XHTML</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                            <tr>
+                                <td class="text-left">Start or end tags are not required for every element.</td>
+                                <td class="text-left">All elements must have a start tag.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Tags and attributes are case-insensitive.</td>
+                                <td class="text-left">Elements and attributes are case sensitive, it is mostly in lowercase.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">Attribues do not need to be quoted.</td>
+                                <td class="text-left">Attribute values must be enclosed in quotes.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">The document must include an HTML5 DOCTYPE.</td>
+                                <td class="text-left">XHTML documents must be well-formed.</td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">All the content can be put under the body element.</td>
+                                <td class="text-left">All elements are nested properly.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </section>               
+                    
                 </div>
             </div>
         </div>
     </div>
+
             <!-- FOOTER -->
 		<div class="line">
 				<footer>  
 						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Crislyn Alawas | Gian Dumpit | Joy Cabildo | Bryn Edades 
                 </footer>
-		</div>
+        </div>
+        
 </body>
 </html>
     
