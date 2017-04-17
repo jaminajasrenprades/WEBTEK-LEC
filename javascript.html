@@ -54,11 +54,16 @@
     </nav>
     </header>
     
-    <!-- TABLE OF CONTENTS -->
+    <!-- TABLE OF CONTENTS -->    
     <div class="tab-con">
-                    <h1 class="table-of-contents">Table of Contents</h1>
+        <details>
+                <summary id="tab-con-with-sub">
+                    <img src="images/arrowdown.png" alt="arrow">
+                </summary>
+                    <h2 class="table-of-contents">Table of Contents</h2>
                     <li id="subcon"><a href="#javascript">What is JavaScript?</a></li>
-                    <li id="subcon"><a href ="#html-versions">Versions of HTML</a></li>
+                    <li id="subcon"><a href ="#basic-syntax">Basic Syntax of Javascript</a></li>
+        </details>
     </div>
     
     <div id="page">  <!-- wraps and defines overall page width, centers it -->
@@ -67,18 +72,44 @@
 				<div class="box-padding"> 
                 <!-- content goes below this line -->		
                 <!-- ARTICLE -->
+                <article>
                 <section>
                 <h1 id="javascript">JavaScript</h1>
                     <p>JavaScript is a programming language that allows us to create updating content, control multimedia, animate images, and pretty much everything else.</p>
                     <p>It will make web pages interactive.</p>
                 </section>
                     
+                <section>
+                    <h2 id="basic-syntax">Basic Syntax of Javascript</h2>
+                    <p>This section icludes statements, variable naming, whitespace, and other basic JavaScrippt Syntax.</p>
+                    <details>
+						<summary>Simple Variable Declaration</summary>
+						<code>var foo = 'hello world';</code>
+					</details>
+                    <details>
+						<summary>Whitespace has no meaning outside of quotation marks</summary>
+						<code>var foo =      'hello world';</code>
+					</details>
+                    <details>
+                        <summary>Parentheses indicate precedence</summary>
+                        <p>In this example multiplication will be the first to be solved.</p>
+						<code>4 * 5 + 5; // returns 30;<code>
+                         <p>In this example addition will be the first to be solved.</p>
+                        <code>4 * (5 + 5); // returns 40;</code>
+					</details>            
+                </section>
+                </article>
+                        
+                    <section>
+                        <h2 id="references">References</h2>
+                        <ul>
+                        </ul>
+                    </section>
+                    
                 </div>
             </div>
         </div>
     </div>  
-    
-    
     
         <!-- FOOTER -->
 		<div class="line">
