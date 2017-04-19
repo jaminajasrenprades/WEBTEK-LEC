@@ -5,11 +5,6 @@ body {
     height:100%;
 }
 
-html {
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%
-}
-
 /* Banner */
 .home-banner {
     background: black url('../styles/banner.png') no-repeat fixed center;
@@ -87,7 +82,7 @@ div.table-title {
   border-collapse: collapse;
   height: 320px;
   margin: auto;
-  max-width: 600px;
+  max-width: 750px;
   padding:5px;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -159,7 +154,7 @@ tr:last-child td:last-child {
 td {
   background:#FFFFFF;
   padding:20px;
-  text-align:left;
+  text-align:center;
   vertical-align:middle;
   font-weight:300;
   font-size:18px;
@@ -220,7 +215,7 @@ p {
 dt {
 	font-family:'Ultra', serif;
     font-size:18px;
-    font-weight:500;
+    font-weight:20px;
     line-height:1.1;
     color:inherit;
     margin-bottom:10px;
@@ -231,7 +226,7 @@ dd {
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: 200px;
 	line-height: 20px;
     margin-bottom:15px;
 }

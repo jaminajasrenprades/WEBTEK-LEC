@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Styles -->
-	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
-    <link rel="stylesheet" media="screen" type="text/css" href="styles/nav.css"/>
     
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One|Ultra" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    
+    <!-- Styles -->
+	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
 		<title>HTML</title>
 </head>
 <body>
+
     <header>
-    <!-- NAVIGATION -->
-    <div id="logo" class="menuUp">
-        <h1>Web Systems and Technologies</h1>
-        <div id="navToggle"><a href="#">Menu</a></div>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="prelims.html">Prelims</a></li>
-            <li>
-                <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
-                <nav>
-                    <ul>
-                        <li><a href="html.html">HTML</a></li>
-                        <li><a href="css.html">CSS</a></li>
-                        <li><a href="javascript.html">JavaScript</a></li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                       <a href="prelims.html">Prelims</a>
+                    </li>
+                    <li>
+                        <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
+                        <nav>
+                            <ul>
+                                <li><a href="html.html">HTML</a></li>
+                                <li><a href="css.html">CSS</a></li>
+                                <li><a href="javascript.html">JavaScript</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
+                        <nav>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="glossary.html">Glossary</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">Our Team</a>
+                    </li>
                     </ul>
-                </nav>
-            </li>
-           <li>
-                <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
-                <nav>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </nav>
-            </li>
-          
-            <li><a href="glossary.html">Glossary</a></li>
-            <li><a href="aboutus.html">Our Team</a></li>
-        </ul>
-    </nav>
-    </header>
+                </div>
+            </div>
+        </nav>
+        </header>
+    
     <!-- TABLE OF CONTENTS -->
     <div class="tab-con">
-                    <h1 class="table-of-contents">Table of Contents</h1>
+        <details>
+                <summary id="tab-con-with-sub">
+                    <img src="images/arrowdown.png" alt="arrow">
+                </summary>
+                    <h2 class="table-of-contents">Table of Contents</h2>
                     <li id="subcon"><a href="#html">What is HTML?</a></li>
                     <li id="subcon"><a href ="#html-versions">Versions of HTML</a></li>
                     <li id="subcon"><a href ="#xhtml">What is XHTML?</a></li>
                     <li id="subcon"><a href ="#xhtml-versions">Versions of XHTML</a></li>  
                     <li id="subcon"><a href ="#htmlvsxhtml">What is the difference of HTML and XHTML?</a></li> 
+        </details>
     </div>
     
     
@@ -70,6 +97,7 @@
 				<div class="box-padding"> 
                 <!-- content goes below this line -->		
                 <!-- ARTICLE -->
+            <article id="html-xhtml">
             <section>
             <h1 id="html">Hypertext Markup Language (HTML)</h1>
                 <p>A markup language (not a programming language) that is used to create web pages in the World Wide Web.</p>
@@ -83,40 +111,40 @@
                        <thead>
                             <tr>
                             <th class="text-left">Version</th>
-                            <th class="text-left">Description</th>
+                            <th class="text-center">Description</th>
                             </tr>
                         </thead>
                         <tbody class="table-hover">
                             <tr>
-                                <td class="text-left">HTML 1.0</td>
+                                <td class="text-center">HTML 1.0</td>
                                 <td class="text-left">HTML 1.0 was the first release of HTML to the world. Not many people were involved in website creation at the time, and the language was very limiting. There really wasn’t much you could do with it bar getting some simple text onto the web. But then, just that got the beardos a-foamin’ back in the day.</td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 2.0</td>
+                                <td class="text-center">HTML 2.0</td>
                                 <td class="text-left">HTML 2.0 included everything from the original 1.0 specifications but added a few new features to the mix. HTML 2.0 was the standard for website design until January 1997 and defined many core HTML features for the first time.</td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 3.0</td>
+                                <td class="text-center">HTML 3.0</td>
                                 <td class="text-left">It included many new and improved abilities for HTML, and promised far more powerful opportunities for webmasters to design their pages. Sadly, the browsers were awfully slow in implementing any of the new improvements, only adding in a few and leaving out the rest. Partly, this failure can be attributed to the size of the overhaul and so the HTML 3.0 spec was abandoned.</td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 3.2</td>
-                                <td class="text-left"> This was a toned-down change to the existing standards, leaving many of the big steps forward for later versions. Most of the extensions tags that had been introduced by Netscape (and to a lesser-extent, Microsoft) did not make it into these new standards. It soon caught on and became the official standard in January ’97, and today practically all browsers support it fully.</td>
+                                <td class="text-center">HTML 3.2</td>
+                                <td class="text-left">This was a toned-down change to the existing standards, leaving many of the big steps forward for later versions. Most of the extensions tags that had been introduced by Netscape (and to a lesser-extent, Microsoft) did not make it into these new standards. It soon caught on and became the official standard in January ’97, and today practically all browsers support it fully.</td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 4.0</td>
+                                <td class="text-center">HTML 4.0</td>
                                 <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 4.01</td>
+                                <td class="text-center">HTML 4.01</td>
                                 <td class="text-left">This version is <em>strict, transitional and uses frameset.</em></td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 5</td>
+                                <td class="text-center">HTML 5</td>
                                 <td class="text-left"></td>
                             </tr>
                             <tr>
-                                <td class="text-left">HTML 5.1</td>
+                                <td class="text-center">HTML 5.1</td>
                                 <td class="text-left"></td>
                             </tr>
                         </tbody>
@@ -298,18 +326,38 @@
                             </tr>
                         </tbody>
                     </table>
-                    </section>               
+                    </section>
+                    </article>
+                    
+                    <article>
+                    <h2 id="references">References</h2>
+                        <ul>
+                            <li>(2014, December 29). Retrieved from W3C: https://www.w3.org/wiki/HTML_structural_elements</li>
+                        </ul>
+                    </article>
                     
                 </div>
             </div>
         </div>
     </div>
+    
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-            <!-- FOOTER -->
-		<div class="line">
-				<footer>  
-						Copyright © 2017 Jamina Jasren S. Prades | Melchizedek Rabot | Crislyn Alawas | Gian Dumpit | Joy Cabildo | Bryn Edades 
-                </footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Web Systems and Technologies 2017 | 9427A</p>
+                </div>
+            </div>
+        </footer>
+    
         </div>
         
 </body>
