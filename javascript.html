@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sigmar+One|Ultra" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
-    
-    <!-- Styles -->
-	<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
-    
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-		<title>JavaScript</title>
+<title>JavaScript</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Viticulture Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<!-- font-awesome-icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
+	
 <body>
-
-    <header>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                       <a href="prelims.html">Prelims</a>
-                    </li>
-                    <li>
-                        <a href="#">Midterms<span class="toggle">Expand</span><span class="caret"></span></a>
-                        <nav>
-                            <ul>
-                                <li><a href="html.html">HTML</a></li>
-                                <li><a href="css.html">CSS</a></li>
-                                <li><a href="javascript.html">JavaScript</a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li>
-                        <a href="#">Finals<span class="toggle">Expand</span><span class="caret"></span></a>
-                        <nav>
-                            <ul>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </nav>
-                    </li>
-                    <li>
-                        <a href="glossary.html">Glossary</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html">Our Team</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        </header>
-    
-    <!-- TABLE OF CONTENTS -->    
-    <div class="tab-con">
-        <details>
-                <summary id="tab-con-with-sub">
-                    <img src="images/arrowdown.png" alt="arrow">
-                </summary>
-                    <h2 class="table-of-contents">Table of Contents</h2>
-                    <li id="subcon"><a href="#javascript">What is JavaScript?</a></li>
-                    <li id="subcon"><a href ="#datatypes">JavaScript Data Types</a></li>
-                    <li id="subcon"><a href ="#basic-syntax">Basic Syntax of Javascript</a></li>
-        </details>
-    </div>
-    
-    <div id="page">  <!-- wraps and defines overall page width, centers it -->
-		<div id="content"> <!-- content area of page -->
-			<div class="box">
-				<div class="box-padding"> 
-                <!-- content goes below this line -->		
+<!-- banner -->
+	<div class="banner">
+		<div class="w3_agile_banner_top">
+			<div class="agile_phone_mail">
+			</div>
+		</div>
+		<div class="agileits_w3layouts_banner_nav">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="index.html"><i>Web</i><span>Systems and Technologies</span></a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item "><a href="index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item menu__item--current"><a href="prelims.html" class="menu__link">Prelims</a></li>
+							<li class="dropdown menu__item">
+								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Midterms<b class="caret"></b></a>
+								<ul class="dropdown-menu agile_short_dropdown">
+									<li><a href="html.html">HTML</a></li>
+									<li><a href="css.html">CSS</a></li>
+                                    <li><a href="javascript.html">JavaScript</a></li>
+								</ul>
+							</li>
+                            <li class="dropdown menu__item">
+								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Finals<b class="caret"></b></a>
+								<ul class="dropdown-menu agile_short_dropdown">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+								</ul>
+							</li>
+                            <li class="menu__item"><a href="glossary.html" class="menu__link">Glossary</a></li>
+                            <li class="menu__item"><a href="aboutus.html" class="menu__link">Our Team</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+		<div class="wthree_banner_info">
+			<h2><span>PRELIMS</span>Web Systems and Technologies Notes</h2>
+			<div class="agileinfo_more">
+				<a class="link link--kumya" href="#" data-toggle="modal" data-target="#myModal"><span data-letters="Learn More">Learn More</span></a>
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- content -->
+<div class="container">  <!-- wraps and defines overall page width, centers it -->
                 <!-- ARTICLE -->
                 <article>
                 <section>
                 <h1 id="javascript">JavaScript</h1>
-                    <p>JavaScript is a programming language that allows us to create updating content, control multimedia, animate images, and pretty much everything else.</p>
-                    <p>It will make web pages interactive.</p>
+                    <p>JavaScript is a scripting programming language that was developed by Brendan Eich in 1995 at Netscape Communications which allows us to create updating content, control multimedia, animate images, and pretty much everything else.</p>
+                    <p>It was formerly called Mocha, LiveScript then JavaScript.</p>
                 </section>
                     
                 <section>
@@ -107,40 +94,15 @@
                         <details>
                             <summary>Simple/Primitive</summary>
                             <li>Undefned</li>
-                            <p>This is a type where in a variale has been declared but has not been assigned a value.</p>
-                            <code>var TestVar;</code>
-                            <code>alert(TestVar);</code>
-                            <p>This will result to undefined becuase we did not assign any value to TestVar.</p>
                             <li>Boolean</li>
-                            <p>This represents only one of the two values which ate (0,1) or (True, False) and there is also (truthy, Falsy)</p>
-                            <code>Boolean(9 > 10)   </code>
-                            <p>This will return falso because 9 is less than 10.</p>
-                            <code>Boolean(10 > 9) </code>
-                            <p>This will return true because this time, 10 is greater than 9.</p>
                             <li>Numbers</li>
-                            <p>In this type, decimal doesn't matter. Numbers can be written with or without decimal.</p>
-                            <code>var x = 36.22;</code>
-                            <code>var y = 36;</code>
                             <li>String</li>
-                            <p>This type can store characters, A string can have single or double quotes.</p>
-                            <code>var phonename = "J7Prime"</code>
-                            <code>var phonename = 'J7Prime'</code>
                        </details>
                        <details>
-			    <summary>Structure/Reference</summary>
+                            <summary>Structure/Reference</summary>
                             <li>Function</li>
-                            <p>This is a procedural abstraction that would allow you to split a complex goal into simpler task.</p>
-                             <code>Function sayHello()</code>
-                            <code>function saySomething()</code>
                            <li>Array</li>
-                           <p>There are 3 methods in array, Mutators, Accessors and Iterators.</p>
-                           <code>var emptyArray = new Array();</code>
-                           <p>This is a sample code for arrayConstructor, type of array's syntax.</p>
-                           <code>var alsoEmptyArray=[];</code>
-                           <p>This a sample array literal type of arrays's syntax which represent an array element, enclosed in square brackets.</p>
                            <li>Objects</li>
-                           <code>var phone = {type:"Samsung", model:"J7 Prime", color:"White"};</code>
-                           <p>This is a sample code of an object assigning many values to a variable named phone.</p>
                        </details>
                      </section>   
                     
@@ -149,55 +111,90 @@
                     <p>This section icludes statements, variable naming, whitespace, and other basic JavaScript Syntax.</p>
                     <details>
 						<summary>Simple Variable Declaration</summary>
-						<code>var foo = 'hello world';</code>
+						<pre>var foo = 'hello world';</pre>
 					</details>
                     <details>
 						<summary>Whitespace has no meaning outside of quotation marks</summary>
-						<code>var foo =      'hello world';</code>
+						<pre>var foo =          'hello world';</pre>
 					</details>
                     <details>
                         <summary>Parentheses indicate precedence</summary>
                         <p>In this example multiplication will be the first to be solved.</p>
-						<code>4 * 5 + 5; // returns 30;<code>
+                        <pre>4 * 5 + 5; // returns 30;</pre>
                          <p>In this example addition will be the first to be solved.</p>
-                        <code>4 * (5 + 5); // returns 40;</code>
-		</details>            
+                        <pre>4 * (5 + 5); // returns 40;</pre>
+					</details>            
                 </section>
                 </article>
-                        
-                     <section>
-                        <h2 id="references">References</h2>
-                        <ul>
-                        <li>JavaScript/Functions. Retrieved April 20, 2017, from https://en.wikibooks.org/wiki/JavaScript/Functions</li>
-                        <li>Retrieved April 20, 2017, from https://www.w3schools.com/js/js_array_methods.asp</li>
-                        <li>What is the difference between null and undefined in JavaScript?. Retrieved April 20, 2017, from http://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript</li>
-                        <li>Retrieved April 20, 2017, from https://www.w3schools.com/jsref/jsref_obj_string.asp</li>
-                        </ul>
-                    </section>
-                    
-                </div>
-            </div>
-        </div>
-    </div> 
-            
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Web Systems and Technologies 2017 | 9427A</p>
-                </div>
-            </div>
-        </footer>  
-        </div> 
+<!-- //content -->
+<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					JAVASCRIPT INTRODUCTION
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<img src="images/javascript.jpg" alt="www" class="img-responsive" />
+						<p>This topic covers </p>
+                    </div>
+				</section>
+			</div>
+		</div>
+	</div>
+<!-- //bootstrap-pop-up -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 w3layouts_footer_grid">
+			</div>
+			<div class="col-md-8 w3layouts_footer_grid">
+				<ul class="w3l_footer_nav">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="glossary.html" class="active">Glossary</a></li>
+					<li><a href="references.html">References</a></li>
+				</ul>
+                <p>© 2017 Web Systems and Technologies. All Rights Reserved.</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
 </body>
 </html>
-                    
-                    
