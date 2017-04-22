@@ -92,6 +92,70 @@
 				<div class="box-padding"> 
                 <!-- content goes below this line -->		
                 <!-- ARTICLE -->
+		
+		<section>
+                <div class = "page-header">  
+				<h3 id="cascading style sheets">Cascading Style Sheets</h3>
+				</div>
+                </section>
+
+                <section>
+                <div class="page-header">
+				<h1 id="intro">Introduction of CSS</h1>
+				</div>
+				<p>	A cascading style sheet (CSS) is a Web page derived from multiple sources with a defined order of precedence where the definitions of any style element conflict.</p>
+                Håkon Wium Lie is the father of CSS.
+                </p>	
+				<p>	For example to alter the font, color, size and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p> 
+				<p> Most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document and applicable for rendering on other forms of media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually aesthetic webpages and user interfaces for web and mobile applications.
+
+				CSS is designed primarily to enable the separation of document content from document presentation, including aspects like layout, colors, and fonts. This separation can improve content accessibility, flexibility and control in the specification of presentation characteristics, enables multiple HTML pages to share formatting by specifying the relevant CSS stored separately in a .css file, and reduce complexity and repetition in the structural content.</p>
+                </section>
+
+                <section>  
+                <div class = "page-header">  
+                <h3 id="history-internet">History of CSS</h3>
+                </div>
+                <table class = "table-striped table-bordered text-center">
+                <thead>
+                <tr>
+                    <th class="text-center">Year</th>
+                    <th class="text-center">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                	 <td>December 1996</td>
+                    <td>W3C Recommendation of CSS 1</td>
+                </tr>
+                <tr>
+                    <td>May 1998</td>
+                    <td>CSS 2 Recommendation</td>
+                </tr>
+                <tr>
+                    <td>May 2003</td>
+                    <td>Dave Shea launches the CSS Zen Garden</td>
+                </tr>
+                <tr>
+                    <td>October 2006</td>
+                    <td>SASS CSS pre-processor</td>
+                </tr>
+                <tr>
+                    <td>August 2009</td>
+                    <td>LESS CSS pre-processor</td>
+                </tr>
+                <tr>
+                    <td>June 2011</td>
+                    <td>MapCSS, CSS-like style for maps; Introuction of CSS 2.1</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>CSS 3 Recommendation</td>
+                </tr>
+                </tbody>
+                </table>
+                </section>
+				
                 <section>
                 <h1 id="css-selectors">CSS Selectors</h1>
                     <details>
@@ -206,7 +270,7 @@
                     </section>
 						    
 						    
-						   <section>
+						<section>
 						<h1 id="css declaration"> CSS Declaration</h1>
 						<details>
 							<summary>CSS Declaration</summary>
@@ -242,6 +306,60 @@
 										<li>Gradient</li>
 										<li>Rotate</li>
 									</ul>
+									
+						<section>
+						<h1 id="css preprocessors/frameworks"> CSS Preprocessors/Frameworks</h1>
+						<details>
+							<summary>CSS Preprocessors/Frameworks</summary>
+							<ul>
+								<li><strong>SASS</strong></li>
+								<p>Original Syntax</p>
+								<code>$serif-font-stack: "Georgia", "Times New Roman", serif<br>
+								$monospace-font-stack: "Cousin", "Courier" 
+								<br>body
+    							font: normal 18px/22px $serif-font-stack
+								<br>pre, code
+    							font: 600 bold 18px/22px $monospace-font-stack
+								</code>
+								<li><strong>LESS</strong></li>
+								<p>Is one of the most popular CSS preprocessors, and the strongest competitor to SASS. LESS extends CSS syntax thoroughly with mixins, variables, nested style rules, and even rule-set looping.</p>
+								<code>
+									.button {
+    									<br>display: inline-block;
+    									<br>width: 80%;
+    									<br>max-width: 200px;
+   										<br>border-radius: 5px;
+    									<br>background-color: black;
+    									<br>color: white;
+    									<br>font-size: 14px;
+    									<br>margin: 5px;
+    									<br>padding: 8px;
+									<br>}
+
+									<br>.button-checkout- process {
+    								<br>.button(); /* Mixin */
+    								<br>background-color: silver;
+									<br>}
+								</code>
+								<li><strong>SCSS</strong></li>
+								<p>A newer syntax that’s very similar to native CSS</p>
+								<code>
+								$serif-font-stack: "Georgia", "Times New Roman", serif;<br>
+								$monospace-font-stack: "Cousin", "Courier";
+								<br>body {
+   								<br>font: normal 18px/22px $serif-font-stack;
+								<br>}
+								<br>pre, code {
+    							<br>font: 600 bold 18px/22px $monospace-font-stack;
+								<br>}
+								</code>
+								<li><strong>Bootstrap</strong></li>
+								<p>A free and open-source front-end web framework for designing websites and web applications but only does front-end development.</p>
+								<li><strong>960 Grid System</strong></li>
+								<p>One of the two major CSS frameworks that is commonly used today. The 960 Grid System is suited for prototyping but also works well when it is integrated into a production environment becuase it provides dimensions based on a width of 960 pixels.</p>
+							</ul>
+							</details>
+							</section>
                                     
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
