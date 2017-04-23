@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>JavaScript</title>
+    <link rel="icon" href="images/icontab.png">
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,9 +51,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class="dropdown menu__item menu__item--current">
 								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Midterms<b class="caret"></b></a>
 								<ul class="dropdown-menu agile_short_dropdown">
-									<li><a href="html.html">HTML</a></li>
+									<li class = "menu__link--current"><a href="html.html">HTML</a></li>
 									<li><a href="css.html">CSS</a></li>
-                                    <li><a href="javascript.html">JavaScript</a></li>
+                                    <li><a href="javascript.html" class="menu__link">JavaScript</a></li>
 								</ul>
 							</li>
                             <li class="dropdown menu__item">
@@ -71,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</nav>
 		</div>
 		<div class="wthree_banner_info">
-			<h2><span>MIDTERMS</span>Web Systems and Technologies Notes</h2>
+			<h2><span>MIDTERMS</span>Web Systems and Technologies Course Notes</h2>
 			<div class="agileinfo_more">
 				<a class="link link--kumya" href="#" data-toggle="modal" data-target="#myModal"><span data-letters="Learn More">Learn More</span></a>
 			</div>
@@ -83,44 +84,211 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!-- ARTICLE -->
                 <article>
                 <section>
+                    <div class ="page-header">
                 <h1 id="javascript">JavaScript</h1>
-                    <p>JavaScript is a scripting programming language that was developed by Brendan Eich in 1995 at Netscape Communications which allows us to create updating content, control multimedia, animate images, and pretty much everything else.</p>
-                    <p>It is an imperative programming language, a sequence of statement, a sequence of instructions that modifies, a dynamically type language that never designate types, and is used in Client-Side Programming.</p>
-                    <p>It was formerly called Mocha, LiveScript then JavaScript.</p>
+                    </div>
+                    <div class ="row1">
+                    <p>JavaScript is a scripting programming language that was developed by Brendan Eich in 1995 at Netscape Communications which allows us to create updating content, control multimedia, animate images, and pretty much everything else. It is an imperative programming language, a sequence of statement, a sequence of instructions that modifies, a dynamically type language that never designate types, and is used in Client-Side Programming to make webpages interactive. It will introduce you to a whole new level of possibilities when making your webpages. It was formerly called Mocha, LiveScript then JavaScript.</p>
+                    </div>
                 </section>
                     
                    <section>
-                       <h2 id="datatypes"> JavaScript Data Types</h2>
-                       <p>This section shows the two Data Types of Javascript and its contents</p>
+                       <div class ="page-header">
+                       <h2 id="datatypes">JavaScript Data Types</h2>
+                       </div>
+                       <div class ="row">
+                       <p>This section shows the Data Types of Javascript and its function.</p>
+                           <br>
+                       </div>
+                       <div class ="row1">
                         <details>
                             <summary>Simple/Primitive</summary>
                             <li>Undefned</li>
+                                <p>A variable that has not been assigned a value has the value undefined. </p>
+                                <code>var TestVar;</code>
+                                <code>alert(TestVar);</code>
+                                <p>This will result to undefined becuase we did not assign any value to TestVar.</p>
                             <li>Boolean</li>
+                                <p>This represents only one of the two values which are (0,1) or (True, False) and there is also (truthy, Falsy)</p>
+                                <code>Boolean(9 > 10)</code>
+                                <p>This will return true because this time, 10 is greater than 9.</p>
+                            <li>Null</li>
+                                <p>Has exactly one value: null.</p>
                             <li>Numbers</li>
+                                <p>Has only one integer that has two representations: 0 is represented as -0 and +0.</p>
+                                <code>var x = 36.22;</code>
+                                <code>var y = 36;</code>
                             <li>String</li>
+                                <p>This type can store characters, A string can have single or double quotes.</p>
+                                <p>It is used to represent textual data.</p>
+                                <code>var phonename = "J7Prime"</code>
+                                <code>var phonename = 'J7Prime'</code>
                        </details>
+                       </div>
+                        <div class ="row1">
                        <details>
                             <summary>Structure/Reference</summary>
                             <li>Function</li>
+                            <p>This is a procedural abstraction that would allow you to split a complex goal into simpler task.</p>
+                            <code>function sayHello()</code>
+                            <code>function saySomething()</code>
                              <li>Array</li>
-		                          <pre>
-                                 <strong>Methods of Array</strong>
-                                Mutator Method
-                                Access Method
-                                Iteration Method</pre>
+                                <div class="tooltip-wrap">
+                                    <p><strong>Methods of Array:</strong></p>
+                                    <p class="method"><u>Accessor Methods</u></p> <p>- These methods do not modify the array and return some representation of the array.</p>
+                                    <div class="tooltip-content">  
+                                        <strong><code>*Array.prototype.concat()</code></strong>
+                                            <p>Returns a new array comprised of this array joined with other array(s) and/or value(s).</p>
+    
+                                        <strong><code>*Array.prototype.includes()</code></strong>
+                                            <p>Determines whether an array contains a certain element, returning true or false as appropriate.</p>
+    
+                                        <strong><code>*Array.prototype.indexOf()</code></strong>
+                                            <p>Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found.</p>
+                                        
+                                        <strong><code>*Array.prototype.join()</code></strong>
+                                            <p>Joins all elements of an array into a string.</p>
+                                        
+                                        <strong><code>*Array.prototype.lastIndexOf()</code></strong>
+                                            <p>Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found.</p>
+                                        
+                                        <strong><code>*Array.prototype.slice()</code></strong>
+                                            <p>Extracts a section of an array and returns a new array.</p>
+                                        
+                                        <strong><code>*Array.prototype.toSource()</code></strong>
+                                            <p>Returns an array literal representing the specified array; you can use this value to create a new array.</p>
+                                            <p>Overrides the Object.prototype.toSource() method.</p>
+                                        
+                                        <strong><code>*Array.prototype.toString()</code></strong>
+                                            <p>Returns a string representing the array and its elements.</p>
+                                            <p>Overrides the Object.prototype.toString() method.</p>
+                                        
+                                        <strong><code>*Array.prototype.toLocaleString()</code></strong>
+                                            <p>Returns a localized string representing the array and its elements.</p>
+                                            <p>Overrides the Object.prototype.toLocaleString() method.</p>
+                                        
+                                        <strong><code>*Array.prototype.entries()</code></strong>
+                                            <p>Returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.every()</code></strong>
+                                            <p>Returns true if every element in this array satisfies the provided testing function.</p>
+                                        
+                                        <strong><code>*Array.prototype.filter()</code></strong>
+                                            <p>Creates a new array with all of the elements of this array for which the provided filtering function returns true.</p>
+                                        
+                                        <strong><code>*Array.prototype.find()</code></strong>
+                                            <p>Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.</p>
+                                        
+                                         <strong><code>*Array.prototype.findIndex()</code></strong>
+                                            <p>Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found.</p>
+                                        
+                                        <strong><code>*Array.prototype.forEach()</code></strong>
+                                            <p>Calls a function for each element in the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.keys()</code></strong>
+                                            <p>Returns a new Array Iterator that contains the keys for each index in the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.map()</code></strong>
+                                            <p>Creates a new array with the results of calling a provided function on every element in this array.</p>
+                                        
+                                        <strong><code>*Array.prototype.reduce()</code></strong>
+                                            <p>Creates a new array with the results of calling a provided function on every element in this array.</p>
+                                        
+                                         <strong><code>*Array.prototype.reduceRight()</code></strong>
+                                            <p>Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value.</p>
+                                        
+                                        <strong><code>*Array.prototype.some()</code></strong>
+                                            <p>Returns true if at least one element in this array satisfies the provided testing function.</p>
+                                        
+                                        <strong><code>*Array.prototype.values()</code></strong>
+                                            <p>Returns a new Array Iterator object that contains the values for each index in the array.</p>
+                                        
+                                        <strong><code>*Array.prototype[@@iterator]()</code></strong>
+                                            <p>Returns a new Array Iterator object that contains the values for each index in the array.</p>    
+                                    </div> 
+                                </div>
+                            </details>
+                       </div>
+                       
+                       <div class = "row1">
+                                <details>
+                                <summary>Iterator Methods</summary>    
+                           
+                                 <div class="tooltip-wrap">
+                                     <p class="method"><u>Mutator Methods</u></p> <p>- These methods modify the array:</p>
+                                    <div class="tooltip-content">  
+                                        <strong><code>*Array.prototype.copyWithin()</code></strong>
+                                            <p>Copies a sequence of array elements within the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.fill()</code></strong>
+                                            <p>Fills all the elements of an array from a start index to an end index with a static value.</p>
+                                        
+                                        <strong><code>*Array.prototype.pop()</code></strong>
+                                            <p>Removes the last element from an array and returns that element.</p>
+                                        
+                                        <strong><code>*Array.prototype.push()</code></strong>
+                                            <p>Adds one or more elements to the end of an array and returns the new length of the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.reverse()</code></strong>
+                                            <p>Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first.</p>
+                                        
+                                        <strong><code>*Array.prototype.sort()</code></strong>
+                                            <p>Sorts the elements of an array in place and returns the array.</p>
+                                        
+                                        <strong><code>*Array.prototype.splice()</code></strong>
+                                            <p>Adds and/or removes elements from an array.</p>
+                                        
+                                        <strong><code>*Array.prototype.unshift()</code></strong>
+                                            <p>Adds one or more elements to the front of an array and returns the new length of the array.</p>          
+                                     </div>
+                           </div>
                             <li>Objects</li>
+                            <p>An object is a value in memory which is possibly referenced by an identifier.</p>
+                            <code>var phone = {type:"Samsung", model:"J7 Prime", color:"White"};</code>
+                            <p>This is a sample code of an object assigning many values to a variable named phone.</p>
                        </details>
+                           </div>
                      </section>
                     
                     <section>
-                        <h2 id="linkedweb">Linking or Embedding web pages using the <code>script</code> element.</h2>
                         
-                    
+                        <h2 class = "page-header" id="linkedweb">Linking or Embedding web pages using the &lt;script&gt; element.</h2>
+                        <div class ="row1">          
+                        <details>
+                            <summary>Linking an External Script</summary>
+                            <p>-To be able to execute your .js file, first you must use <code>&lt;script&gt;</code> with the source of attribute that will directly point to the script file.</p>
+                            <p>example:</p>
+                                <pre>
+                                <code>&lt;script  type=”text/javascript” src="path/script.js&gt;&lt;/script&gt;</code>
+                                </pre>
+                            
+                            <summary>Between Script Tags</summary>
+                            <p>-You can write the your javascript between the &lt;script&gt; tags.</p>
+                            <p>example:</p> 
+                            <pre>
+                            <code>&lt;script type=”text/javascript”&gt;
+                            /* script code goes here */
+                            &lt;/script&gt;</code>
+                            </pre>
+                            
+                            <summary>Inline in the HTML</summary>
+                            <p>JavaScript can be added to the code directly.</p>
+                            <p>Here are the three events that can be used to call JavaScript functions, these events are most likely to be used:</p>
+                            <p><b>1. OnClick</b></p>
+                            <p><b>2. OnMouseOver</b></p> 
+                            <p><b>3. OnMouseOut</b></p> 
+                        </details>  
+                        </div>
                     </section>
                     
                 <section>
-                    <h2 id="basic-syntax">Basic Syntax of Javascript</h2>
+                    
+                    <h2 class = "page-header" id="basic-syntax">Basic Syntax of Javascript</h2>
+                    <div class = "row">
                     <p>This section icludes statements, variable naming, whitespace, and other basic JavaScript Syntax.</p>
+                    </div>
+                    <br>
+                    <div class = "row1">
                     <details>
 						<summary>Simple Variable Declaration</summary>
 						<pre>var foo = 'hello world';</pre>
@@ -135,12 +303,241 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <pre>4 * 5 + 5; // returns 30;</pre>
                          <p>In this example addition will be the first to be solved.</p>
                         <pre>4 * (5 + 5); // returns 40;</pre>
-					</details>            
+					</details>      
+                    </div>
                 </section>
+                    
+                <section>
+                    <h2 class = "page-header" id="features-of-javascript">Features of JavaScript</h2>
+                    <div class = "row1">
+                    <details>
+                            <summary>Paradigm</summary>
+                            <li>Object-Oriented</li>
+                            <li>Imperative</li>
+                            <li>Functional</li>
+                    </details>
+                    </div>
+                    <div class = "row1">
+                    <details>
+                            <summary>Types and Variables of JavaScript</summary>
+                            <li>Data Types</li>
+                                <div class="tooltip-wrap">
+                                    <p class="method"><u>Primitive Types</u></p> 
+                                    <div class="tooltip-content">  
+                                    <strong>Numbers</strong>
+                                            <p>decimals, hexadecimal notations</p>
+                                     <strong>Booleans</strong>
+                                        <p>true or false</p>
+                                     <strong>Strings</strong>
+                                            <p>Single or Double quote delimited</p>
+                                    <strong>Undefined</strong>
+                                    <strong>Null</strong>
+                                    </div>
+                                </div>
+                        
+                                <div class="tooltip-wrap">
+                                    <p class="method"><u>Composite types</u></p> 
+                                    <div class="tooltip-content">  
+                                    <strong>JavaScript Objects</strong>
+                                           <li>Boolean,Date, Error, Global, Number, Object, RegExp</li>
+                                            <li>Arrays</li>
+                                        <li>Functions</li>
+                                        
+                                    <strong>DOM</strong>
+                                    </div>
+                                </div>
+                    </details>
+                    </div>
+                    </section>
+                        
+                                <section>
+                                    <h2 class = "page-header" id="DOM">What is DOM?</h2>
+                                    <div class = "row">
+                                    <p>DOM stands for Document Object Model that is an interface for HTML and XML documents. It is used to connect web pages to scripts or programming languages.</p>
+                                    </div>
+                                    <h2 class = "page-header" id="DOM">Keywords</h2>
+                                    <table class = "borderless-table">
+                                        <tbody>
+                                        <tr>
+                                            <td>break</td>
+                                            <td>else</td>
+                                            <td>new</td>
+                                            <td>var</td>
+                                        </tr>
+                                        <tr>
+                                            <td>case</td>
+                                            <td>finally</td>
+                                            <td>return</td>
+                                            <td>void</td>
+                                        </tr>
+                                        <tr>
+                                            <td>catch</td>
+                                            <td>for</td>
+                                            <td>switch</td>
+                                            <td>while</td>
+                                        </tr>
+                                        <tr>
+                                            <td>continue</td>
+                                            <td>function</td>
+                                            <td>this</td>
+                                            <td>with</td>
+                                        </tr>
+                                        <tr>
+                                            <td>default</td>
+                                            <td>if</td>
+                                            <td>throw</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>delete</td>
+                                            <td>in</td>
+                                            <td>try</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>do</td>
+                                            <td>instanceof</td>
+                                            <td>typeof</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <h2 class = "page-header" id="DOM">Reserved Words that are currently not used</h2>
+                                    <table class = "borderless-table">
+                                        <tbody>
+                                        <tr>
+                                            <td>abstract</td>
+                                            <td>Boolean</td>                                          
+                                        </tr>
+                                        <tr>
+                                            <td>byte</td>
+                                            <td>char</td>
+                                        </tr>
+                                        <tr>                                                                    
+                                            <td>class</td>
+                                            <td>const</td>
+                                        </tr>
+                                        <tr>
+                                            <td>debugger</td>
+                                            <td>float</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                        
+                                <section>
+                                <h2 class = "page-header" id="as-syn-ajax">Document Object Model</h2>
+                                <div class = "row1">
+                                 <table class="table-fill">
+                                       <thead>
+                                            <tr>
+                                            <th class="text-left">Document Object Collections</th>
+                                            <th class="text-left">Document Object Properties</th>
+                                            <th class="text-left">Document Object Methods</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-hover">
+                                            <tr>                                         
+                                            <td class="text-left">
+                                                <code>anchors[]</code>
+                                                <code>forms[]</code>
+                                                <code>images[]</code>
+                                                <code>links[]</code>
+                                                </td>
+            
+                                            <td class="text-left">
+                                                <code>cookie</code>
+                                                <code>documentMode</code>
+                                                <code>domain</code>
+                                                <code>lastModified</code>
+                                                <code>readyState</code>
+                                                <code>referrer</code>
+                                                <code>title</code>
+                                                <code>URL</code>       
+                                            </td>
+                                                
+                                            <td class="text-left">
+                                                <code>close()</code>
+                                                <code>getElementById()</code>
+                                                <code>getElementsByName()</code>
+                                                <code>getElementsByTagName()</code>
+                                                <code>open()</code>
+                                                <code>write()</code>
+                                                <code>writeln()</code>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                </section>        
+                        
+                                 <section>
+                                    <h2 class = "page-header" id="AJAX">AJAX</h2>
+                                     
+                                     <p class = "row1">AJAX stands for Asynchronous JavaScript and XML. It is not a programming language, but it is a technique used in client-side scripting that is used to communicate with the web server. But to be able to communicate with servers you must use XMLHttpRequest object.</p> 
+                                </section>
+                        
+                                <section>
+                                    <h2 class = "page-header" id="as-syn-ajax">Synchronous and Asynchrounous Request</h2>    
+                                    <p class = "row">Making the request and getting the response from the server is common to the both requests.</p>
+                                    <br>
+                                    <table class="table-fill row1">
+                                       <thead>
+                                            <tr>
+                                            <th class="text-left">Synchronous Request</th>
+                                            <th class="text-left">Asynchronous Request</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-hover">
+                                            <tr>
+                                                <td class="text-left">The process here is when the script stops and waits for the server to send back a reply before continuing.</td>
+                                                <td class="text-left">The process here is being handled independently, which the script will allow the page to continue to be processed and handles the reply when it arrives.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                            </section>
+                    
+                    <section>
+                    <div class ="page-header">
+                    <h1 id="xmlhttprequest">XHTMLHttpRequest</h1>
+                    </div>
+                    <div class ="row1">
+                    <p>It is a derivation of HTML that is used for creating Web pages.</p>
+                    </div>
+                    </section>
+                    
+                    <h2 class = "page-header" id="features-of-javascript">Properties of XHTMLHttpRequest</h2>
+                    <div class = "row1">
+                    <details>
+                        <summary>XHTMLHttpRequest.onreadystatechange</summary>
+                            <p>Defines a function to be called when the readyState property changes.</p>
+                    <code>XMLHttpRequest.onreadystatechange = callback;</code>
+                    </details>
+                    </div>
+                    
+                    <div class = "row1">
+                    <details>
+                        <summary>XHTMLHttpRequest.readyState</summary>
+                            <li>0: Request Not Initialized</li>
+                            <li>1: Server Connection Established</li>
+                            <li>2: Request Received</li>
+                            <li>3: Processing Request</li>
+                            <li>4: Request Finished and Response is Ready</li>
+                    </details>
+                    </div>
+                    
+                    <div class = "row1">
+                    <details>
+                        <summary>XHTMLHttpRequest.status</summary>
+                        <li>200: OK </li>li>
+                        <li>404: Not Found</li>
+                    </details>
+                    </div>
                 </article>
     </div>
-
-<!-- //content -->
+         
+               <!-- //content -->
 <!-- bootstrap-pop-up -->
 	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
 		<div class="modal-dialog" role="document">
@@ -152,10 +549,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<section>
 					<div class="modal-body">
 						<img src="images/javascript.jpg" alt="www" class="img-responsive" />
-						<p>This page covers the understanding on how JavaScipt works and how it was originated. Also, it also provides the information about the data types, keywords, functions, and document object models (its collections, properties, and methods.</p>
+						<p>This page covers the understanding on how JavaScipt works and how it was originated. Also, it also provides the information about the features, data types, keywords, functions, and document object models (its collections, properties, and methods).</p>
                     </div>
 				</section>
-			</div>
+            </div>
 		</div>
 	</div>
 <!-- //bootstrap-pop-up -->
@@ -166,8 +563,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="col-md-8 w3layouts_footer_grid">
 				<ul class="w3l_footer_nav">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="glossary.html" class="active">Glossary</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="glossary.html">Glossary</a></li>
 					<li><a href="references.html">References</a></li>
 				</ul>
                 <p>© 2017 Web Systems and Technologies. All Rights Reserved.</p>
